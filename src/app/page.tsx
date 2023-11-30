@@ -15,7 +15,7 @@ export default async function Home() {
           />
         </div>
 
-        <div className="m-4 w-full max-w-screen-sm flex-grow flex-col flex-wrap bg-primary p-4">
+        <div className="bg-primary m-4 w-full max-w-screen-sm flex-grow flex-col flex-wrap p-4">
           <h1 className="text-2xl">Ola, Eu sou Gustavo</h1>
           <h3 className="text-white">Um desenvolvedor fullstack</h3>
           <p>

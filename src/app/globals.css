@@ -11,14 +11,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: 210deg 0% 12%;
-    --content: 0deg 0% 95%;
-    --primary: 0deg 0% 21%;
+    --background: 0deg 0% 10%;
+    --content: 0deg 0% 40%;
+    --primary: 210deg 29% 24%;
     --secondary: 60deg 1% 65%;
   }
-}
-
-body {
-  background: var(--background);
-  -webkit-font-smoothing: antialiased;
 }

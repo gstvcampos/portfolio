@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer>
+    <footer className="fixed bottom-0">
       <div>
         <p>Made by Gustavo — Copyright 2023</p>
       </div>

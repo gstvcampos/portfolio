@@ -8,12 +8,12 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      green2: '#0C3436',
-      green1: '#059669',
-      green: '#34D399',
-      gray: '#9CA3AF',
-      white: '#ffffff',
-      plink: '#FF79C6',
+      bg: 'hsl(var(--background) / <alpha-value>)',
+      content: 'hsl(var(--content) / <alpha-value>)',
+      text: {
+        1: 'hsl(var(--primary) / <alpha-value>)',
+        2: 'hsl(var(--secondary) / <alpha-value>)',
+      },
     },
   },
   plugins: [],

@@ -5,10 +5,10 @@ import { useRef, useState } from 'react'
 
 export default function EncryptBtn({
   innerText,
-  toElement,
+  page,
 }: {
   innerText: string
-  toElement: string
+  page: string
 }) {
   const chars = '!@#$%^&*():{};|,.<>/?'
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
@@ -46,12 +46,12 @@ export default function EncryptBtn({
     <div
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
-      className="border-green hover:bg-green2 rounded-lg border-[1px] px-4 py-2"
+      className="rounded-t-md border-[1px] border-b-0 p-1"
     >
-      <Link href={toElement} className="text-sm">
-        <span className="text-green">&lt; </span>
+      <Link href={page} className="text-sm">
+        <span>&lt; </span>
         {text}
-        <span className="text-green"> /&gt;</span>
+        <span> /&gt;</span>
       </Link>
     </div>
   )

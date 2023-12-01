@@ -10,13 +10,13 @@ export default function NavBtn({
   innerText: string
   page: string
 }) {
-  const pathname = usePathname()
-  const general = 'w-32 border-x-[1px] border-b-0 p-1'
-  const current = 'w-32 bg-bg'
+  const pathname = usePathname() === page
+  const current = 'inline-flex p-4 hover:text-color-2 border-b-2'
+  const defalt = 'inline-flex p-4 hover:text-color-2'
 
   return (
-    <div className={pathname === page ? current : general}>
-      <Link href={page} className="ml-2">
+    <div className="me-2">
+      <Link href={page} className={pathname ? current : defalt}>
         {innerText}
       </Link>
     </div>

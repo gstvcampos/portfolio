@@ -2,11 +2,11 @@ import NavBtn from './NavBtn'
 
 export default function Header() {
   return (
-    <header className="bg-color-2">
-      <nav className="mx-1 mt-1 flex justify-start">
+    <header className="border-b border-color-3 bg-content-2">
+      <nav className="flex text-center">
         <NavBtn page="/" innerText="perfil" />
+        <NavBtn page="/habilidades" innerText="habilidades" />
         <NavBtn page="/projetos" innerText="projetos" />
-        <NavBtn page="/contatos" innerText="contato" />
       </nav>
     </header>
   )

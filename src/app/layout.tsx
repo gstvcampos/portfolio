@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${mono.className} flex h-screen items-center justify-center bg-bg text-color-1 antialiased`}
       >
-        <div className="flex h-full max-w-4xl flex-grow flex-col overflow-hidden md:h-[555px]">
+        <div className="h-full max-w-4xl flex-grow bg-content-1 md:h-[555px]">
           <Header />
           {children}
         </div>

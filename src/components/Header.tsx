@@ -1,12 +1,12 @@
-import EncryptBtn from './EncryptBtn'
+import NavBtn from './NavBtn'
 
 export default function Header() {
   return (
-    <header className="mx-auto flex justify-center">
-      <nav className="fixed mt-2 flex">
-        <EncryptBtn page="/" innerText="perfil" />
-        <EncryptBtn page="projetos" innerText="projetos" />
-        <EncryptBtn page="contatos" innerText="contato" />
+    <header className="bg-color-2">
+      <nav className="mx-1 mt-1 flex justify-start">
+        <NavBtn page="/" innerText="perfil" />
+        <NavBtn page="/projetos" innerText="projetos" />
+        <NavBtn page="/contatos" innerText="contato" />
       </nav>
     </header>
   )

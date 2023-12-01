@@ -3,17 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --background: 210deg 9% 95%;
-  --content: 0deg 0% 11%;
-  --primary: 60deg 1% 65%;
-  --secondary: 0deg 0% 21%;
+  --background: 168deg 76% 37%;
+  --content-primary: 0deg 0% 100%;
+  --content-secondary: 220deg 13% 95%;
+  --color-one: 0deg 0% 37%;
+  --color-two: 210deg 29% 24%;
+  --color-three: 0deg 0% 37%;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: 0deg 0% 10%;
-    --content: 0deg 0% 40%;
-    --primary: 210deg 29% 24%;
-    --secondary: 60deg 1% 65%;
+    --background: 168deg 76% 37%;
+    --content-primary: 200deg 6% 10%;
+    --content-secondary: 195deg 6% 13%;
+    --color-one: 36deg 10% 90%;
+    --color-two: 210deg 29% 24%;
+    --color-three: 0deg 0% 37%;
   }
 }

@@ -9,10 +9,14 @@ const config: Config = {
   theme: {
     colors: {
       bg: 'hsl(var(--background) / <alpha-value>)',
-      content: 'hsl(var(--content) / <alpha-value>)',
-      text: {
-        1: 'hsl(var(--primary) / <alpha-value>)',
-        2: 'hsl(var(--secondary) / <alpha-value>)',
+      content: {
+        1: 'hsl(var(--content-primary) / <alpha-value>)',
+        2: 'hsl(var(--content-secondary) / <alpha-value>)',
+      },
+      color: {
+        1: 'hsl(var(--color-one) / <alpha-value>)',
+        2: 'hsl(var(--color-two) / <alpha-value>)',
+        3: 'hsl(var(--color-three) / <alpha-value>)',
       },
     },
   },

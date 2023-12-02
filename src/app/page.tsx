@@ -7,6 +7,7 @@ export default async function Home() {
     <main className="flex flex-col gap-4 p-4 md:flex-row">
       <div className="w-full flex-col items-center justify-center md:w-fit md:flex-row">
         <Image
+          className="m-auto block"
           priority={true}
           src={photo}
           width={250}

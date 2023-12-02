@@ -17,9 +17,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${mono.className} flex h-screen items-center justify-center bg-bg text-color-1 antialiased`}
+        className={`${mono.className} flex h-screen items-center bg-bg text-color-1 antialiased`}
       >
-        <div className="h-full max-w-4xl flex-grow bg-content-1 md:h-[555px]">
+        <div className="m-auto h-full max-w-4xl bg-content-1 md:h-auto">
           <Header />
           {children}
         </div>

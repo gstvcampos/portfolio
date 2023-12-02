@@ -1,30 +1,30 @@
 import photo from '@/assets/photo.png'
 import Image from 'next/image'
-import { CiViewList } from 'react-icons/ci'
+import { CiMail, CiViewList } from 'react-icons/ci'
 
 export default async function Home() {
   return (
     <main className="flex flex-col gap-4 p-4 md:flex-row">
-      <div className="w-full flex-col items-center justify-center md:w-fit md:flex-row">
+      <div className="w-full md:w-fit ">
         <Image
-          className="m-auto block"
+          className="m-auto"
           priority={true}
           src={photo}
           width={250}
           height={250}
-          alt={'Imagem do author'}
+          alt={'Imagem do autor'}
         />
 
-        <div className="mt-4 flex flex-row items-center justify-center gap-4 md:flex-col">
-          <button className="w-44 max-w-full border-b-4 border-color-3 bg-content-2 md:w-full">
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-4 md:flex-col">
+          <button className="w-44 border-b-4 border-color-3 bg-content-2 md:w-full">
             <span className="flex gap-4 px-4 py-3">
               <CiViewList size={30} />
               <span>Currículo</span>
             </span>
           </button>
-          <button className="w-44 max-w-full border-b-4 border-color-3 bg-content-2 md:w-full">
+          <button className="w-44 border-b-4 border-color-3 bg-content-2 md:w-full">
             <span className="flex gap-4 px-4 py-3">
-              <CiViewList size={30} />
+              <CiMail size={30} />
               <span>Email</span>
             </span>
           </button>

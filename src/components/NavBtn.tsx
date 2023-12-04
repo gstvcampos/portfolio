@@ -2,22 +2,23 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { ReactNode } from 'react'
 
 export default function NavBtn({
-  innerText,
   page,
+  children,
 }: {
-  innerText: string
   page: string
+  children: ReactNode
 }) {
   const pathname = usePathname() === page
-  const current = 'inline-flex p-4 hover:text-color-2 border-b-2'
-  const defalt = 'inline-flex p-4 hover:text-color-2'
+  const current = 'bg-content-2'
+  const defalt = ''
 
   return (
-    <div className="me-2">
-      <Link href={page} className={pathname ? current : defalt}>
-        {innerText}
+    <div className={pathname ? current : defalt}>
+      <Link href={page} className="inline-flex h-24">
+        {children}
       </Link>
     </div>
   )

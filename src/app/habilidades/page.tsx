@@ -91,12 +91,17 @@ const technologies = [
 
 export default function Habilidades() {
   return (
-    <main className="overflow-hidden">
-      <ul className="grid grid-cols-3">
-        {technologies.map((tech, index) => (
-          <li key={index}>{tech.icon}</li>
-        ))}
-      </ul>
+    <main className="h-full w-full max-w-4xl bg-content-1 md:h-fit">
+      <header className="flex h-12 bg-content-2 p-3">Habilidades</header>
+      <div className="flex-1 overflow-auto p-4">
+        <ul className="grid grid-cols-5 content-between gap-8 py-4 ">
+          {technologies.map((tech, index) => (
+            <li className="w-20" key={index}>
+              {tech.icon}
+            </li>
+          ))}
+        </ul>
+      </div>
     </main>
   )
 }

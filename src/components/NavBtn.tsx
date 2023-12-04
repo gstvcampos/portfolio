@@ -12,14 +12,13 @@ export default function NavBtn({
   children: ReactNode
 }) {
   const pathname = usePathname() === page
-  const current = 'bg-content-2'
-  const defalt = ''
+  const current = 'm-2 inline-flex h-20 overflow-auto rounded-lg bg-content-2'
+  const comun =
+    'inline-flex h-20 m-2 overflow-auto hover:bg-content-2 rounded-lg'
 
   return (
-    <div className={pathname ? current : defalt}>
-      <Link href={page} className="inline-flex h-24">
-        {children}
-      </Link>
-    </div>
+    <Link href={page} className={pathname ? current : comun}>
+      {children}
+    </Link>
   )
 }

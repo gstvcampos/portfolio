@@ -5,7 +5,7 @@ import { CiMail, CiViewList } from 'react-icons/ci'
 export default async function Home() {
   return (
     <main className="h-full w-full max-w-4xl bg-content-1 md:h-fit">
-      <header className="flex h-12 bg-content-2 p-3">Projetos</header>
+      <header className="flex h-12 bg-content-2 p-3">../perfil</header>
       <div className="flex flex-col gap-4 p-4 md:flex-row">
         <div>
           <Image

@@ -1,3 +1,4 @@
+import FolderBtn from '@/components/FolderBtn'
 import {
   CssIcon,
   DjangoIcon,
@@ -92,12 +93,24 @@ const technologies = [
 
 export default function Habilidades() {
   return (
-    <main className="h-full w-full overflow-hidden bg-content-1 lg:max-h-[calc(100%-16px)] lg:max-w-4xl">
-      <header className="flex h-12 bg-content-2 p-3">Habilidades</header>
-      <div className="max-h-full flex-1 overflow-auto p-4">
-        <div className="mb-4 content-center"></div>
-        <div className="min-h-[400px] py-4">
-          <ul className="grid grid-cols-3 gap-y-8 py-4 md:grid-cols-4 lg:grid-cols-5">
+    <main className="h-full w-full overflow-hidden bg-content-1 md:h-fit md:max-h-[calc(100%-16px)] lg:max-w-4xl">
+      <header className="flex h-12 bg-content-2 p-3">../habilidades</header>
+      <section className="flex flex-col gap-4 overflow-auto p-4 md:flex-row">
+        <div className="mt-4 flex flex-wrap gap-4 md:flex-col">
+          <ul className="flex flex-wrap overflow-hidden md:flex-col">
+            <li>
+              <FolderBtn name="todas" />
+            </li>
+            <li>
+              <FolderBtn name="todas" />
+            </li>
+            <li>
+              <FolderBtn name="todos" />
+            </li>
+          </ul>
+        </div>
+        <div className="min-h-[400px] w-full bg-content-2 py-4">
+          <ul className="grid min-h-[400px] grid-cols-3 gap-y-8 py-4 md:grid-cols-4 lg:grid-cols-5">
             {technologies.map((tech, index) => (
               <li key={index}>
                 <Link
@@ -112,23 +125,7 @@ export default function Habilidades() {
             ))}
           </ul>
         </div>
-      </div>
-      {/* <div className="max-h-full flex-1 overflow-auto p-4">
-        <ul className="grid grid-cols-3 gap-8 gap-y-8 py-4 md:grid-cols-4 lg:grid-cols-5 ">
-          {technologies.map((tech, index) => (
-            <li key={index}>
-              <Link
-                target="_blank"
-                href={tech.documentationLink}
-                className="flex flex-col items-center gap-1"
-              >
-                {tech.icon}
-                <span>{tech.name}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div> */}
+      </section>
     </main>
   )
 }

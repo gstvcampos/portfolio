@@ -1,4 +1,3 @@
-import photo from '@/assets/photo.png'
 import Image from 'next/image'
 import { CiMail, CiViewList } from 'react-icons/ci'
 
@@ -11,7 +10,7 @@ export default async function Home() {
           <Image
             className="m-auto"
             priority={true}
-            src={photo}
+            src="/photo.png"
             width={250}
             height={250}
             alt={'Imagem do autor'}

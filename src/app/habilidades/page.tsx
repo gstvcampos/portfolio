@@ -14,6 +14,7 @@ import {
   TailwindIcon,
   TypeScriptIcon,
 } from '@/components/Icons'
+import Link from 'next/link'
 
 const technologies = [
   {
@@ -91,17 +92,43 @@ const technologies = [
 
 export default function Habilidades() {
   return (
-    <main className="h-full w-full max-w-4xl bg-content-1 md:h-fit">
+    <main className="h-full w-full overflow-hidden bg-content-1 lg:max-h-[calc(100%-16px)] lg:max-w-4xl">
       <header className="flex h-12 bg-content-2 p-3">Habilidades</header>
-      <div className="flex-1 overflow-auto p-4">
-        <ul className="grid grid-cols-5 content-between gap-8 py-4 ">
+      <div className="max-h-full flex-1 overflow-auto p-4">
+        <div className="mb-4 content-center"></div>
+        <div className="min-h-[400px] py-4">
+          <ul className="grid grid-cols-3 gap-y-8 py-4 md:grid-cols-4 lg:grid-cols-5">
+            {technologies.map((tech, index) => (
+              <li key={index}>
+                <Link
+                  target="_blank"
+                  href={tech.documentationLink}
+                  className="flex h-full flex-col items-center justify-between"
+                >
+                  <span className="h-auto w-16 p-2">{tech.icon}</span>
+                  <span>{tech.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      {/* <div className="max-h-full flex-1 overflow-auto p-4">
+        <ul className="grid grid-cols-3 gap-8 gap-y-8 py-4 md:grid-cols-4 lg:grid-cols-5 ">
           {technologies.map((tech, index) => (
-            <li className="w-20" key={index}>
-              {tech.icon}
+            <li key={index}>
+              <Link
+                target="_blank"
+                href={tech.documentationLink}
+                className="flex flex-col items-center gap-1"
+              >
+                {tech.icon}
+                <span>{tech.name}</span>
+              </Link>
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </main>
   )
 }

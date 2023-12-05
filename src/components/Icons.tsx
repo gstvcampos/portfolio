@@ -36,6 +36,7 @@ export const DjangoIcon = (props) => (
     </g>
   </svg>
 )
+
 export const DocumentIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

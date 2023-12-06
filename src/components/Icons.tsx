@@ -1,5 +1,10 @@
 export const CssIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 32 32"
+  >
     <path
       fill="#1572b6"
       d="M5.902 27.201 3.656 2h24.688l-2.249 25.197L15.985 30z"
@@ -26,6 +31,8 @@ export const CssIcon = () => (
 export const DjangoIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
     viewBox="0 0 256 326"
     preserveAspectRatio="xMidYMid meet"
   >
@@ -37,7 +44,13 @@ export const DjangoIcon = () => (
 )
 
 export const DocumentIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 24 24"
+    fill="none"
+  >
     <path
       fill="#0D0D0D"
       d="M4 4a2 2 0 0 1 2-2h8a1 1 0 0 1 .707.293l5 5A1 1 0 0 1 20 8v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4zm13.586 4L14 4.414V8h3.586zM12 4H6v16h12V10h-5a1 1 0 0 1-1-1V4zm-4 9a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1z"
@@ -46,7 +59,12 @@ export const DocumentIcon = () => (
 )
 
 export const HtmlIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 32 32"
+  >
     <path
       fill="#e44f26"
       d="M5.902 27.201 3.655 2h24.69l-2.25 25.197L15.985 30z"
@@ -65,6 +83,8 @@ export const HtmlIcon = () => (
 export const JavaScriptIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
     viewBox="0 0 256 256"
     preserveAspectRatio="xMidYMid"
   >
@@ -76,6 +96,8 @@ export const JavaScriptIcon = () => (
 export const NestIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
     viewBox="0 0 256 255"
     preserveAspectRatio="xMidYMid"
   >
@@ -87,7 +109,12 @@ export const NestIcon = () => (
 )
 
 export const NextIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 512 512"
+  >
     <path d="M386.399 35.508C217.06-64.061 1.885 57.55.012 253.882c-1.828 191.716 201.063 315.545 370.02 231.163L185.56 213.636v167.997c0 18.614-35.619 18.614-35.619 0V156.421c0-14.776 27.448-15.989 35.226-3.145L395.43 470.572c157.95-101.737 155.817-338.136-9.031-435.064zm-23.756 317.939L326.91 298.87V149.458c0-13.932 35.732-13.932 35.732 0z" />
   </svg>
 )
@@ -95,6 +122,8 @@ export const NextIcon = () => (
 export const NodeIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
     viewBox="0 0 256 289"
     preserveAspectRatio="xMidYMid"
   >
@@ -108,6 +137,8 @@ export const NodeIcon = () => (
 export const PostgresIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
     viewBox="0 0 256 264"
     preserveAspectRatio="xMidYMid"
   >
@@ -124,7 +155,12 @@ export const PostgresIcon = () => (
 )
 
 export const PrismaIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 32 32"
+  >
     <path
       fill="#0c344b"
       fillRule="evenodd"
@@ -136,6 +172,8 @@ export const PrismaIcon = () => (
 export const PythonIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
     viewBox="0 0 256 255"
     preserveAspectRatio="xMidYMid"
   >
@@ -161,6 +199,8 @@ export const PythonIcon = () => (
 export const ReactIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
     viewBox="0 0 256 228"
     preserveAspectRatio="xMidYMid"
   >
@@ -172,7 +212,12 @@ export const ReactIcon = () => (
 )
 
 export const StyledComponentsIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 32 32"
+  >
     <path
       fill="#ffcebf"
       d="M18.05 29.6c.042-.095.148-.161.225-.241 1.175-1.232 2.36-2.453 3.519-3.7A3.2 3.2 0 0 0 22.808 23a5.925 5.925 0 0 0-.143-.624c-.316.3-.61.573-.906.848-.46.428-.918.858-1.382 1.281a1.931 1.931 0 0 1-2.148.419 1.973 1.973 0 0 1-1.29-1.75 1.04 1.04 0 0 0-.043-.146c-.353.3-.691.576-1.026.86l-6.963 5.9c-.048.041-.1.092-.145.132h9.283l-.014-.009c-.05-.035-.024-.219.019-.311zM8.337 29.6a1.239 1.239 0 0 1 .295-.276l9.636-8.175q.986-.837 1.963-1.683a.523.523 0 0 0 .182-.224 5.364 5.364 0 0 0 .065-2.069c-.1.07-.154.1-.2.149-.789.706-1.574 1.418-2.367 2.12a1.762 1.762 0 0 1-2.048.329 1.889 1.889 0 0 1-1.08-1.807v-.324c-.145.106-.251.177-.35.257q-5.785 4.632-11.568 9.257c-.174.139-.382.449-.61.148s.119-.425.294-.565q6.165-4.947 12.336-9.885c.67-.537.714-.762.278-1.615l-.26.244c-.713.663-1.434 1.317-2.136 1.991a2.121 2.121 0 0 1-3.585-1.337c-.133.1-.248.173-.357.258l-6.1 4.728a1.485 1.485 0 0 1-.356.258.446.446 0 0 1-.3-.015v8.561h6.256a.365.365 0 0 1 .012-.325z"
@@ -195,6 +240,8 @@ export const StyledComponentsIcon = () => (
 export const TailwindIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
     viewBox="0 0 256 154"
     preserveAspectRatio="xMidYMid"
   >
@@ -212,6 +259,8 @@ export const TailwindIcon = () => (
 export const TypeScriptIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
     viewBox="0 0 256 256"
     preserveAspectRatio="xMidYMid"
   >
@@ -223,7 +272,12 @@ export const TypeScriptIcon = () => (
 )
 
 export const ProjectsIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 400 300"
+  >
     <path
       fill="#68e1fd"
       d="M298.44 222.43a10.34 10.34 0 0 0 .42-2.88c0-8.22-10-14.88-22.38-14.88s-22.38 6.66-22.38 14.88a10 10 0 0 0 .43 2.88z"
@@ -365,7 +419,12 @@ export const ProjectsIcon = () => (
 )
 
 export const ProfileIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 400 300"
+  >
     <path
       fill="#68e1fd"
       d="M220.28 162.2h17.42a30.7 30.7 0 0 1 29.3 21.7l9.41 30.69a7.33 7.33 0 0 1-7 9.49h-80.9a7.33 7.33 0 0 1-7-9.49l9.41-30.69a30.7 30.7 0 0 1 29.36-21.7z"
@@ -495,7 +554,12 @@ export const ProfileIcon = () => (
 )
 
 export const SkillsIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 400 300 "
+  >
     <rect
       width={137.03}
       height={166.68}
@@ -581,7 +645,12 @@ export const SkillsIcon = () => (
 )
 
 export const CloseFolderIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 48 48 "
+  >
     <path
       fill="#ffa000"
       d="M40 12H22l-4-4H8c-2.2 0-4 1.8-4 4v8h40v-4c0-2.2-1.8-4-4-4z"
@@ -594,7 +663,13 @@ export const CloseFolderIcon = () => (
 )
 
 export const OpendedFolderIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    width="100%"
+    height="100%"
+    viewBox="0 0 48 48 "
+  >
     <path
       fill="#ffa000"
       d="M38 12H22l-4-4H8c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h31c1.7 0 3-1.3 3-3V16c0-2.2-1.8-4-4-4z"
@@ -603,5 +678,29 @@ export const OpendedFolderIcon = () => (
       fill="#ffca28"
       d="M42.2 18H15.3c-1.9 0-3.6 1.4-3.9 3.3L8 40h31.7c1.9 0 3.6-1.4 3.9-3.3l2.5-14c.5-2.4-1.4-4.7-3.9-4.7z"
     />
+  </svg>
+)
+
+export const LinkedinIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    width="100%"
+    height="100%"
+    viewBox="0 0 24 24"
+  >
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
+  </svg>
+)
+
+export const GitHubIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    width="100%"
+    height="100%"
+    viewBox="0 0 24 24"
+  >
+    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
   </svg>
 )

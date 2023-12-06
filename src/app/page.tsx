@@ -1,10 +1,11 @@
+import Header from '@/components/Header'
 import Image from 'next/image'
 import { CiMail, CiViewList } from 'react-icons/ci'
 
 export default async function Home() {
   return (
     <main className="h-full w-full bg-content-1 md:h-fit lg:max-w-4xl">
-      <header className="flex h-12 bg-content-2 p-3">../perfil</header>
+      <Header innerText={'../perfil'} />
       <section className="flex h-[calc(100%-48px)] flex-col gap-4 overflow-auto p-4 md:flex-row">
         <div>
           <Image
@@ -16,15 +17,15 @@ export default async function Home() {
             alt={'Imagem do autor'}
           />
 
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-4 md:flex-col">
+          <div className="mt-4 flex flex-wrap justify-center gap-4 md:flex-col">
             <button className="w-44 border-b-4 border-color-3 bg-content-2 md:w-full">
-              <span className="flex gap-4 px-4 py-3">
+              <span className="flex items-center gap-4 px-4 py-3">
                 <CiViewList size={30} />
                 <span>Currículo</span>
               </span>
             </button>
             <button className="w-44 border-b-4 border-color-3 bg-content-2 md:w-full">
-              <span className="flex gap-4 px-4 py-3">
+              <span className="flex items-center gap-4 px-4 py-3">
                 <CiMail size={30} />
                 <span>Email</span>
               </span>
@@ -37,8 +38,7 @@ export default async function Home() {
           <p className="mb-6 text-color-3">desenvolvedor web fullstack</p>
           <p className="mb-6">
             sou um desenvolvedor fullstack apaixonado por tecnologia. Meu
-            objetivo é criar interfaces de usuário bonitas e funcionais. Estou
-            sempre aberto a novas oportunidades e desafios.
+            objetivo é criar interfaces de usuário bonitas e funcionais.
           </p>
           <h3 className="text-xl">Alguns fatos</h3>
           <ul className="mb-6">

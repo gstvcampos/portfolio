@@ -5,7 +5,7 @@ export default async function Home() {
   return (
     <main className="h-full w-full bg-content-1 md:h-fit lg:max-w-4xl">
       <header className="flex h-12 bg-content-2 p-3">../perfil</header>
-      <div className="flex flex-col gap-4 p-4 md:flex-row">
+      <section className="flex h-[calc(100%-48px)] flex-col gap-4 overflow-auto p-4 md:flex-row">
         <div>
           <Image
             className="m-auto"
@@ -54,7 +54,7 @@ export default async function Home() {
             <li>sou vascaino</li>
           </ul>
         </div>
-      </div>
+      </section>
     </main>
   )
 }

@@ -8,7 +8,7 @@ export default function Footer() {
         <NavBtn page="/">
           <ProfileIcon />
         </NavBtn>
-        <NavBtn page="/habilidades">
+        <NavBtn page="/tecnologias">
           <SkillsIcon />
         </NavBtn>
         <NavBtn page="/projetos">

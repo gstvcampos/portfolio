@@ -7,6 +7,10 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      segoe: ['Segoe UI Regular', 'sans-serif'],
+      'segoe-bold': ['Segoe UI Bold', 'sans-serif'],
+    },
     colors: {
       content: {
         1: 'hsl(var(--content-primary) / <alpha-value>)',

@@ -11,8 +11,8 @@ export default function ProjectContainer({ id }: { id: number }) {
               className="m-auto"
               priority={true}
               src={project.img}
-              width={250}
-              height={250}
+              width={400}
+              height={400}
               alt={'Imagem do autor'}
             />
             <span>{project.name}</span>

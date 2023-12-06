@@ -18,7 +18,7 @@ export default function SelectBtns() {
           >
             <button
               onClick={() => setSelectedId(project.id)}
-              className="flex min-w-[200px] items-center gap-2 p-2"
+              className="flex min-w-[160px] items-center gap-2 p-2"
             >
               <span
                 className={

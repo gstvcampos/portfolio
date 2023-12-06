@@ -33,7 +33,7 @@ export const projects = [
   {
     id: 5,
     name: 'MKS',
-    img: '',
+    img: '/mks.png',
     deploy:
       'https://react-entrega-s3-template-hamburgueria-gstvcampos.vercel.app/',
     main: 'https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-template-hamburgueria-gstvcampos/tree/main',

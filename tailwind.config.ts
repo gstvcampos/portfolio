@@ -8,7 +8,6 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      bg: 'hsl(var(--background) / <alpha-value>)',
       content: {
         1: 'hsl(var(--content-primary) / <alpha-value>)',
         2: 'hsl(var(--content-secondary) / <alpha-value>)',

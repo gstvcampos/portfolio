@@ -40,9 +40,7 @@ export default function SelectBtns() {
           </li>
         ))}
       </ul>
-      <div className="w-full bg-content-2 p-4">
-        <ProjectContainer id={selectedId} />
-      </div>
+      <ProjectContainer id={selectedId} />
     </>
   )
 }

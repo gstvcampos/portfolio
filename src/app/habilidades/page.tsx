@@ -5,7 +5,7 @@ export default function Habilidades() {
   return (
     <main className="h-full w-full overflow-hidden bg-content-1 md:h-fit md:max-h-[calc(100%-16px)] lg:max-w-4xl">
       <header className="flex h-12 bg-content-2 p-3">../habilidades</header>
-      <section className="flex flex-col gap-4 overflow-auto p-4 md:flex-row">
+      <section className="flex flex-col gap-4 p-4 md:flex-row">
         <div className="min-h-[400px] w-full bg-content-2 py-4">
           <ul className="grid min-h-[400px] grid-cols-3 gap-y-8 py-4 md:grid-cols-4 lg:grid-cols-5">
             {technologies.map((tech, index) => (

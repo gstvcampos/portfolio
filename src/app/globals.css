@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: 168deg 76% 37%;
+  --background-blue: 197deg 71% 73%;
+  --background-green: 157deg 100% 49%;
   --content-primary: 0deg 0% 100%;
   --content-secondary: 220deg 13% 95%;
   --color-one: 0deg 0% 37%;
@@ -13,11 +14,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: 168deg 76% 37%;
+    --background-blue: 220deg 98% 40%;
+    --background-green: 150deg 75% 25%;
     --content-primary: 200deg 6% 10%;
     --content-secondary: 195deg 6% 13%;
     --color-one: 36deg 10% 90%;
     --color-two: 210deg 29% 24%;
     --color-three: 0deg 0% 37%;
   }
+}
+
+body {
+  background: linear-gradient(to bottom, hsl(var(--background-blue)), hsl(var(--background-green)));
 }

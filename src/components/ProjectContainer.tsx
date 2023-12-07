@@ -10,23 +10,14 @@ export default function ProjectContainer({ id }: { id: number }) {
         project.id === id ? (
           <div key={project.id} className="flex flex-wrap p-4 md:flex-nowrap">
             <div className="m-auto">
-              <div className="max-h-[200px] min-h-[200px] min-w-[200px] max-w-[200px]">
-                <Image
-                  className=""
-                  priority={true}
-                  layout="responsive"
-                  width={400}
-                  height={400}
-                  src={project.img}
-                  style={{
-                    maxHeight: '100%',
-                    minHeight: '100%',
-                    minWidth: '100%',
-                    maxWidth: '100%',
-                  }}
-                  alt={'Imagem do projeto'}
-                />
-              </div>
+              <Image
+                className=""
+                priority={true}
+                width={300}
+                height={300}
+                src={project.img}
+                alt={'Imagem do projeto'}
+              />
               <div className="mt-4 flex flex-wrap justify-center gap-4 md:flex-col">
                 {project.deploy ? (
                   <Link

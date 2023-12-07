@@ -1,53 +1,69 @@
 import { projects } from '@/db/projects'
 import Image from 'next/image'
 import Link from 'next/link'
+import { BranchIcon, DeployIcon } from './Icons'
 
 export default function ProjectContainer({ id }: { id: number }) {
   return (
-    <div className="bg-content-2">
+    <div className="w-full bg-content-2 ">
       {projects.map((project) =>
         project.id === id ? (
-          <div
-            key={project.id}
-            className="flex h-full w-full flex-wrap justify-center"
-          >
-            <div className="flex flex-col md:w-2/3">
-              <h2 className="font-segoe-bold p-4">{project.name}</h2>
-              <div className="px-4">
-                <span>{project.description}</span>
-                <div className="my-7 flex gap-4">
-                  {project.deploy ? (
-                    <Link
-                      target="_blank"
-                      href={project.deploy}
-                      className="font-segoe-bold rounded-lg bg-content-1 p-2"
-                    >
-                      Deploy
-                    </Link>
-                  ) : (
-                    ''
-                  )}
+          <div key={project.id} className="flex flex-wrap p-4 md:flex-nowrap">
+            <div className="m-auto">
+              <div className="max-h-[200px] min-h-[200px] min-w-[200px] max-w-[200px]">
+                <Image
+                  className=""
+                  priority={true}
+                  layout="responsive"
+                  width={400}
+                  height={400}
+                  src={project.img}
+                  style={{
+                    maxHeight: '100%',
+                    minHeight: '100%',
+                    minWidth: '100%',
+                    maxWidth: '100%',
+                  }}
+                  alt={'Imagem do projeto'}
+                />
+              </div>
+              <div className="mt-4 flex flex-wrap justify-center gap-4 md:flex-col">
+                {project.deploy ? (
                   <Link
                     target="_blank"
-                    href={project.main}
-                    className="font-segoe-bold rounded-lg bg-content-1 p-2"
+                    href={project.deploy}
+                    className="min-w-[150px] border-b-4 border-color-3 bg-content-2 md:w-full"
                   >
-                    GitHub
+                    <span className="flex items-center">
+                      <span className="border-r-[1px] border-color-3 px-3 py-1">
+                        <span className="flex w-6">
+                          <DeployIcon />
+                        </span>
+                      </span>
+                      <span className="px-4 py-3">Deploy</span>
+                    </span>
                   </Link>
-                </div>
+                ) : null}
+                <Link
+                  target="_blank"
+                  href={project.main}
+                  className="min-w-[150px] border-b-4 border-color-3 bg-content-2 md:w-full"
+                >
+                  <span className="flex items-center">
+                    <span className="border-r-[1px] border-color-3 px-3 py-1">
+                      <span className="flex w-6">
+                        <BranchIcon />
+                      </span>
+                    </span>
+                    <span className="px-4 py-3">GitHub</span>
+                  </span>
+                </Link>
               </div>
             </div>
-            <div className="p-4 text-center md:w-1/3">
-              <Image
-                className=""
-                priority={true}
-                layout="responsive"
-                width={400}
-                height={400}
-                src={project.img}
-                alt={'Imagem do projeto'}
-              />
-              <span>image{project.id}.png</span>
+
+            <div className="m-4 flex max-w-full flex-col gap-6">
+              <h2 className="font-segoe-bold">{project.name}</h2>
+              <p className="">{project.description}</p>
             </div>
           </div>
         ) : null,

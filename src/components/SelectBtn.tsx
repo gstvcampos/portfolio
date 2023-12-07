@@ -10,7 +10,7 @@ export default function SelectBtns() {
 
   return (
     <>
-      <ul className="flex flex-wrap md:flex-col">
+      <ul className="mb-6 flex flex-wrap md:flex-col">
         {projects.map((project) => (
           <li
             key={project.id}

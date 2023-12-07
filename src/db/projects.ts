@@ -13,7 +13,7 @@ export const projects = [
     name: 'Burguer',
     img: '/burguer.png',
     description:
-      'Navegue pelo cardápio virtual repleto de hambúrgueres suculentos, estilizado para te deixar com água na boca. Adicione seus favoritos ao carrinho de compras, desfrute de uma experiência visualmente atraente e mergulhe na simplicidade de pedir hambúrgueres deliciosos online.',
+      'Navegue pelo cardápio virtual repleto de hambúrgueres suculentos, para te deixar com água na boca. Adicione seus favoritos ao carrinho de compras, desfrute de uma experiência visualmente atraente e mergulhe na simplicidade de pedir hambúrgueres deliciosos online.',
     deploy:
       'https://react-entrega-s3-template-hamburgueria-gstvcampos.vercel.app/',
     main: 'https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-template-hamburgueria-gstvcampos/tree/main',

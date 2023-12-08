@@ -12,13 +12,15 @@ export default function NavBtn({
   children: ReactNode
 }) {
   const pathname = usePathname() === page
-  const current = 'm-2 inline-flex h-20 overflow-auto rounded-lg bg-content-2'
-  const comun =
-    'inline-flex h-20 m-2 overflow-auto hover:bg-content-2 rounded-lg'
+  const current = 'inline-flex h-20 rounded-xl bg-black relative'
+  const comun = 'inline-flex h-20 hover:bg-black rounded-xl relative'
 
   return (
     <Link href={page} className={pathname ? current : comun}>
-      {children}
+      <span className="mb-2">{children}</span>
+      {pathname && (
+        <span className="bg-content-3 absolute bottom-1 left-1/2 h-2 w-2 -translate-x-1/2 rounded-full"></span>
+      )}
     </Link>
   )
 }

@@ -12,7 +12,8 @@ const config: Config = {
       'segoe-bold': ['Segoe UI Bold', 'sans-serif'],
     },
     colors: {
-      black: 'hsl(var(--black) / 0.5)',
+      gray: 'hsl(var(--gray) / <alpha-value>)',
+      black: 'hsl(var(--black) / 0.4)',
       content: {
         1: 'hsl(var(--content-primary) / <alpha-value>)',
         2: 'hsl(var(--content-secondary) / <alpha-value>)',

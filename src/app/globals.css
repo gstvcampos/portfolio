@@ -4,7 +4,8 @@
 
 :root {
   --black: 0deg 0% 0%;
-  --deep-purple: 260deg 70% 30%;
+  --purple: 321deg 74% 24%;
+  --orange: 349deg 62% 42%;
   --content-primary: 0deg 0% 100%;
   --content-secondary: 220deg 13% 95%;
   --content-tertiary: 210deg 29% 70%;
@@ -14,8 +15,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --black: 0deg 0% 0%;
-    --deep-purple: 260deg 70% 30%;
+    --top: 321deg 97% 15%;
+    --middle: 324deg 97% 19%;
+    --bottom: 355deg 65% 39%;
+    --gray: 0deg 0% 5%;
+    --purple: 321deg 74% 24%;
+    --orange: 349deg 62% 42%;
     --content-primary: 200deg 6% 10%;
     --content-secondary: 195deg 6% 13%;
     --content-tertiary: 210deg 29% 70%;
@@ -25,7 +30,7 @@
 }
 
 body {
-  background: radial-gradient(circle at center, hsl(var(--deep-purple)), hsl(var(--black)));
+  background: linear-gradient(to bottom, hsl(var(--top)), hsl(var(--middle)), hsl(var(--bottom)));
 }
 
 footer {

@@ -2,7 +2,6 @@ export const projects = [
   {
     id: 1,
     name: 'Kenzie Hub',
-    img: '/hub.png',
     description:
       'Aqui, você encontrará recursos robustos de cadastro e login, intuitivas para simplificar sua jornada na plataforma.',
     deploy: 'https://react-entrega-kenzie-hub-gstvcampos.vercel.app/',
@@ -11,7 +10,6 @@ export const projects = [
   {
     id: 2,
     name: 'Burguer',
-    img: '/burguer.png',
     description:
       'Navegue pelo cardápio virtual repleto de hambúrgueres suculentos, para te deixar com água na boca. Adicione seus favoritos ao carrinho de compras, desfrute de uma experiência visualmente atraente e mergulhe na simplicidade de pedir hambúrgueres deliciosos online.',
     deploy:
@@ -21,7 +19,6 @@ export const projects = [
   {
     id: 3,
     name: 'Nu Kenzie',
-    img: '/nuKenzie.png',
     description:
       'Seu aliado no controle financeiro pessoal! Aqui, você encontrará uma aplicação intuitiva para gerenciar suas entradas e saídas financeiras. A experiência é focada na simplicidade: preencha o formulário com suas transações, acompanhe o saldo total e desfrute de uma interface estilizada para tornar o controle financeiro eficiente e agradável.',
     deploy:
@@ -31,7 +28,6 @@ export const projects = [
   {
     id: 4,
     name: 'Contatos',
-    img: '/contatos.png',
     description:
       'Aqui, você encontrará uma aplicação intuitiva para gerenciar clientes e seus contatos vinculados.',
     deploy: 'https://fullstack-customer-contact-gstvcampos.vercel.app/',
@@ -40,7 +36,6 @@ export const projects = [
   {
     id: 5,
     name: 'MKS',
-    img: '/mks.png',
     description:
       'A aplicação consiste em uma loja online que consome uma API REST de produtos para exibir uma lista de itens disponíveis para compra. Esta aplicação foi desenvolvida como parte de um desafio técnico,  seguindo as diretrizes e requisitos fornecidos.',
     deploy: 'https://mks-frontend-challenge-sigma.vercel.app/',
@@ -49,7 +44,6 @@ export const projects = [
   {
     id: 6,
     name: 'Kanvas',
-    img: '/kanvas.png',
     description:
       'A API Kanvas oferece uma solução robusta para gerenciamento eficiente de cursos e aulas',
     main: 'https://github.com/gstvcampos/m5-projeto-final-kanvas-gstvcampos/tree/main',
@@ -57,7 +51,6 @@ export const projects = [
   {
     id: 7,
     name: 'KiMoveis',
-    img: '/kiMoveis.png',
     description:
       'A API KImóveis oferece funcionalidades para o gerenciamento de uma imobiliária. Ela permite cadastrar imóveis, usuários interessados na aquisição de propriedades, agendar visitas e consultar horários disponíveis para visitas aos imóveis.',
     main: 'https://github.com/Kenzie-Academy-Brasil-Developers/m4-kimoveis-gstvcampos',

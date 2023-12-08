@@ -11,7 +11,7 @@ export default function ProjectContainer({ id }: { id: number }) {
           <div key={project.id} className="flex flex-wrap p-4 md:flex-nowrap">
             <div className="m-auto">
               <Image
-                className=""
+                className="m-auto"
                 priority={true}
                 width={300}
                 height={300}

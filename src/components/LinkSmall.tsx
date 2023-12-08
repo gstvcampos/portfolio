@@ -14,13 +14,13 @@ export default function LinkSmall({
     <Link
       target="_blank"
       href={href}
-      className="hover:bg-content-3 text-text-2 min-w-[150px] bg-content-2 md:w-full"
+      className="hover:bg-content-3 text-text-1 bg-content-1 md:w-full"
     >
       <span className="flex items-center border-b-4">
         <span className="border-r-[1px] px-3 py-1">
-          <span className="flex w-6">{children}</span>
+          <span className="flex w-5">{children}</span>
         </span>
-        <span className="px-4 py-2">{innerText}</span>
+        <span className="px-2 py-2">{innerText}</span>
       </span>
     </Link>
   )

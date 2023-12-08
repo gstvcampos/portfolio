@@ -14,6 +14,7 @@ const config: Config = {
     colors: {
       gray: 'hsl(var(--gray) / <alpha-value>)',
       black: 'hsl(var(--black) / 0.4)',
+      purple: 'hsl(var(--purple) / <alpha-value>)',
       content: {
         1: 'hsl(var(--content-primary) / <alpha-value>)',
         2: 'hsl(var(--content-secondary) / <alpha-value>)',

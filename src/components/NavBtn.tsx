@@ -19,7 +19,7 @@ export default function NavBtn({
     <Link href={page} className={pathname ? current : comun}>
       <span className="mb-2">{children}</span>
       {pathname && (
-        <span className="bg-content-3 absolute bottom-1 left-1/2 h-2 w-2 -translate-x-1/2 rounded-full"></span>
+        <span className="bg-purple absolute bottom-1 left-1/2 h-2 w-2 -translate-x-1/2 rounded-full"></span>
       )}
     </Link>
   )

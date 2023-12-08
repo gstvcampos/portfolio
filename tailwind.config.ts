@@ -12,14 +12,15 @@ const config: Config = {
       'segoe-bold': ['Segoe UI Bold', 'sans-serif'],
     },
     colors: {
+      black: 'hsl(var(--black) / 0.5)',
       content: {
         1: 'hsl(var(--content-primary) / <alpha-value>)',
         2: 'hsl(var(--content-secondary) / <alpha-value>)',
+        3: 'hsl(var(--content-tertiary) / <alpha-value>)',
       },
-      color: {
-        1: 'hsl(var(--color-one) / <alpha-value>)',
-        2: 'hsl(var(--color-two) / <alpha-value>)',
-        3: 'hsl(var(--color-three) / <alpha-value>)',
+      text: {
+        1: 'hsl(var(--color-text-primary) / <alpha-value>)',
+        2: 'hsl(var(--color-text--secondary) / <alpha-value>)',
       },
     },
   },

@@ -1,7 +1,7 @@
 import Header from '@/components/Header'
 import { MailIcon, ResumeIcon } from '@/components/Icons'
+import LinkDefault from '@/components/LinkDefault'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default async function Home() {
   return (
@@ -17,37 +17,15 @@ export default async function Home() {
             height={250}
             alt={'Imagem do autor'}
           />
-
           <div className="mt-4 flex flex-wrap justify-center gap-4 md:flex-col">
-            <Link
-              href={''}
-              className="min-w-[150px] border-b-4 border-color-3 bg-content-2 md:w-full"
-            >
-              <span className="flex items-center">
-                <span className="border-r-[1px] border-color-3 px-3 py-1">
-                  <span className="flex w-6">
-                    <ResumeIcon />
-                  </span>
-                </span>
-                <span className="px-4 py-3">Currículo</span>
-              </span>
-            </Link>
-            <Link
-              href={''}
-              className="min-w-[150px] border-b-4 border-color-3 bg-content-2 md:w-full"
-            >
-              <span className="flex items-center">
-                <span className="border-r-[1px] border-color-3 px-3 py-1">
-                  <span className="flex w-6">
-                    <MailIcon />
-                  </span>
-                </span>
-                <span className="px-4 py-3">Email</span>
-              </span>
-            </Link>
+            <LinkDefault innerText="Currículo" href="/">
+              <ResumeIcon />
+            </LinkDefault>
+            <LinkDefault innerText="Email" href="/">
+              <MailIcon />
+            </LinkDefault>
           </div>
         </div>
-
         <div className="h-full w-full bg-content-2 p-4">
           <h2 className="font-segoe-bold text-2xl">Ola, eu sou Gustavo</h2>
           <p className="text-color-3">desenvolvedor web fullstack</p>

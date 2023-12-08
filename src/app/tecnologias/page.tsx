@@ -15,12 +15,12 @@ export default function Tecnologias() {
                 href={tech.documentationLink}
                 className="group relative box-border flex w-full flex-col items-center text-center"
               >
-                <span className="mb-1 rounded-3xl bg-color-3 p-6 transition duration-500 ease-in-out group-hover:rounded-full group-hover:bg-color-2">
+                <span className="group-hover:bg-content-3 mb-1 rounded-3xl bg-content-1 p-6 transition duration-500 ease-in-out group-hover:rounded-full">
                   <span className="block h-12 w-12 transition duration-1000 ease-in-out group-hover:scale-125">
                     {tech.icon}
                   </span>
                 </span>
-                <span className="font-segoe-bold group-hover:text-color-2">
+                <span className="group-hover:text-content-3 font-segoe-bold">
                   {tech.name}
                 </span>
               </Link>

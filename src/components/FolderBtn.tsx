@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { CloseFolderIcon, OpendedFolderIcon } from './Icons'
 import ProjectContainer from './ProjectContainer'
 
-export default function SelectBtns() {
+export default function FolderBtn() {
   const [selectedId, setSelectedId] = useState(0)
 
   return (

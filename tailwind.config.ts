@@ -12,17 +12,20 @@ const config: Config = {
       'segoe-bold': ['Segoe UI Bold', 'sans-serif'],
     },
     colors: {
-      gray: 'hsl(var(--gray) / <alpha-value>)',
-      black: 'hsl(var(--black) / 0.4)',
-      purple: 'hsl(var(--purple) / <alpha-value>)',
       content: {
         1: 'hsl(var(--content-primary) / <alpha-value>)',
         2: 'hsl(var(--content-secondary) / <alpha-value>)',
         3: 'hsl(var(--content-tertiary) / <alpha-value>)',
       },
       text: {
-        1: 'hsl(var(--color-text-primary) / <alpha-value>)',
-        2: 'hsl(var(--color-text--secondary) / <alpha-value>)',
+        1: 'hsl(var(--text-primary) / <alpha-value>)',
+        2: 'hsl(var(--text-muted) / <alpha-value>)',
+        3: 'hsl(var(--text-title) / <alpha-value>)',
+      },
+      purple: 'hsl(var(--purple) / <alpha-value>)',
+      gray: {
+        1: 'hsl(var(--gray-dark) / <alpha-value>)',
+        2: 'hsl(var(--gray-light) / <alpha-value>)',
       },
     },
   },

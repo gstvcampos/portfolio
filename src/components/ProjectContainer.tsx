@@ -1,7 +1,7 @@
 import { projects } from '@/db/projects'
 import Image from 'next/image'
-import Link from 'next/link'
 import { BranchIcon, DeployIcon } from './Icons'
+import LinkSmall from './LinkSmall'
 
 export default function ProjectContainer({ id }: { id: number }) {
   return (
@@ -20,35 +20,13 @@ export default function ProjectContainer({ id }: { id: number }) {
               />
               <div className="mt-4 flex flex-wrap justify-center gap-4 md:flex-col">
                 {project.deploy ? (
-                  <Link
-                    target="_blank"
-                    href={project.deploy}
-                    className="min-w-[150px] border-b-4 border-color-3 bg-content-2 md:w-full"
-                  >
-                    <span className="flex items-center">
-                      <span className="border-r-[1px] border-color-3 px-3 py-1">
-                        <span className="flex w-6">
-                          <DeployIcon />
-                        </span>
-                      </span>
-                      <span className="px-4 py-3">Deploy</span>
-                    </span>
-                  </Link>
+                  <LinkSmall href={project.deploy} innerText="Deploy">
+                    <DeployIcon />
+                  </LinkSmall>
                 ) : null}
-                <Link
-                  target="_blank"
-                  href={project.main}
-                  className="min-w-[150px] border-b-4 border-color-3 bg-content-2 md:w-full"
-                >
-                  <span className="flex items-center">
-                    <span className="border-r-[1px] border-color-3 px-3 py-1">
-                      <span className="flex w-6">
-                        <BranchIcon />
-                      </span>
-                    </span>
-                    <span className="px-4 py-3">GitHub</span>
-                  </span>
-                </Link>
+                <LinkSmall href={project.main} innerText="GitHub">
+                  <BranchIcon />
+                </LinkSmall>
               </div>
             </div>
 

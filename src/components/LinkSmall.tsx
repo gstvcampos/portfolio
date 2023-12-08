@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ReactNode } from 'react'
 
-export default function LinkDefault({
+export default function LinkSmall({
   innerText,
   href,
   children,

@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default async function Home() {
   return (
-    <main className="h-full w-full bg-content-1 md:h-fit lg:max-w-4xl">
+    <main className="h-full w-full bg-content-1 md:h-auto lg:max-w-4xl">
       <Header innerText={'../perfil'} />
       <section className="flex h-[calc(100%-48px)] flex-col gap-4 overflow-auto p-4 md:flex-row">
         <div>

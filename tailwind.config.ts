@@ -19,6 +19,7 @@ const config: Config = {
       muted: 'hsl(var(--muted) / <alpha-value>)',
       text: 'hsl(var(--text) / <alpha-value>)',
       purple: 'hsl(var(--purple) / <alpha-value>)',
+      title: 'hsl(var(--title) / <alpha-value>)',
     },
   },
   plugins: [],

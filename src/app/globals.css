@@ -20,6 +20,8 @@
   --muted: 0deg 0% 60%;
   /* text */
   --text: 210deg 29% 24%;
+  /* title */
+  --title: 36deg 10% 90%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,6 +42,8 @@
     --muted: 0deg 0% 80%;
     /* text */
     --text: 36deg 10% 90%;
+    /* title */
+    --title: 36deg 10% 90%;
   }
 }
 

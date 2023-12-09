@@ -18,10 +18,16 @@ export default async function Home() {
             alt={'Imagem do autor'}
           />
           <div className="mt-4 flex flex-wrap justify-center gap-4 md:flex-col">
-            <LinkDefault innerText="Currículo" href="/">
+            <LinkDefault
+              innerText="Currículo"
+              href="https://drive.google.com/file/d/1zTjgJNG4zljUYHPk7U1byQd-UCs_QmQN/view?usp=drive_link"
+            >
               <ResumeIcon />
             </LinkDefault>
-            <LinkDefault innerText="Email" href="/">
+            <LinkDefault
+              innerText="Email"
+              href="mailto:gustavo.bmc76@gmail.com"
+            >
               <MailIcon />
             </LinkDefault>
           </div>

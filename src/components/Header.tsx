@@ -4,7 +4,7 @@ import { GitHubIcon, LinkedinIcon } from './Icons'
 export default function Header({ innerText }: { innerText: string }) {
   return (
     <header className="bg-primary text-title flex h-12 justify-between p-3">
-      <span>{innerText}</span>
+      <span className="text-text">{innerText}</span>
       <div className="flex gap-4">
         <Link
           target="_blank"

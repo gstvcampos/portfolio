@@ -12,14 +12,14 @@ export default function FooterBtn({
   children: ReactNode
 }) {
   const pathname = usePathname() === page
-  const current = 'inline-flex h-20 rounded-xl bg-black relative'
-  const comun = 'inline-flex h-20 hover:bg-black rounded-xl relative'
+  const current = ' h-20 rounded-xl bg-gray-2 bg-opacity-50 relative'
+  const comun = ' h-20 hover:bg-gray-2 bg-opacity-60 rounded-xl relative'
 
   return (
     <Link href={page} className={pathname ? current : comun}>
       <span className="mb-2">{children}</span>
       {pathname && (
-        <span className="bg-purple absolute bottom-1 left-1/2 h-2 w-2 -translate-x-1/2 rounded-full"></span>
+        <span className="absolute bottom-1 left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-purple"></span>
       )}
     </Link>
   )

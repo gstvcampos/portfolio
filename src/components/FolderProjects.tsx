@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { CloseFolderIcon, OpendedFolderIcon } from './Icons'
 import ProjectContainer from './ProjectContainer'
 
-export default function FolderBtn() {
+export default function FolderProjects() {
   const [selectedId, setSelectedId] = useState(0)
 
   return (
@@ -14,7 +14,7 @@ export default function FolderBtn() {
         {projects.map((project) => (
           <li
             key={project.id}
-            className={selectedId === project.id ? 'bg-content-2' : ''}
+            className={selectedId === project.id ? 'bg-content' : ''}
           >
             <button
               onClick={() => setSelectedId(project.id)}

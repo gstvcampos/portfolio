@@ -6,26 +6,20 @@
   --top: 321deg 97% 15%;
   --middle: 324deg 97% 19%;
   --bottom: 355deg 65% 39%;
-  --gray: 0deg 0% 5%;
-  --gray-light: 0deg 0% 70%;
   --purple: 321deg 70% 50%;
-
-  --black: 0deg 0% 0%;
-  --orange: 349deg 62% 42%;
-  --content-primary: 0deg 0% 100%;
-  --content-secondary: 220deg 13% 95%;
-  --content-tertiary: 210deg 29% 70%;
-  --color-text-primary: 0deg 0% 37%;
-  --color-text--secondary: 210deg 29% 24%;
-
-  --background-primary: 0deg 0% 100%;
-  --background-secondary: 220deg 13% 95%;
-
   --border: 220deg 13% 95%;
+  /* barras e texto */
   --primary: 210deg 29% 24%;
-
-  --text: 36deg 10% 90%;
-  --text-muted: 36deg 10% 90%;
+  /* selecionado */
+  --focus: 210deg 29% 16%;
+  /* bg geral */
+  --secondary: 0deg 0% 100%;
+  /* bg dentro */
+  --content: 220deg 13% 95%;
+  /* text sem destaque cinza, hover icon... */
+  --muted: 0deg 0% 60%;
+  /* text */
+  --text: 210deg 29% 24%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,54 +27,24 @@
     --top: 321deg 97% 15%;
     --middle: 324deg 97% 19%;
     --bottom: 355deg 65% 39%;
-
     --purple: 321deg 70% 50%;
-    --content-primary: 200deg 6% 10%;
-    --content-secondary: 195deg 6% 13%;
-    --content-tertiary: 208deg 30% 20%;
-
-    --border: 77deg 109% 141%;
-
-    --text-primary: 36deg 10% 90%;
-    --text-muted: 208deg 30% 75%;
-    --text-title: 0deg 0% 70%;
-
-    --gray-dark: 0deg 0% 5%;
-    --gray-light: 0deg 0% 70%;
-  }
-}
-
-@media (prefers-color-scheme: mordem) {
-  :root {
-    --top: 321deg 97% 15%;
-    --middle: 324deg 97% 19%;
-    --bottom: 355deg 65% 39%;
-    --gray: 0deg 0% 5%;
-    --purple: 321deg 70% 50%;
-    --orange: 349deg 62% 42%;
-    --content-primary: 200deg 6% 10%;
-    --content-secondary: 195deg 6% 13%;
-    --content-tertiary: 210deg 29% 70%;
-    --color-text-primary: 36deg 10% 90%;
-    --color-text--secondary: 36deg 10% 90%;
-
-    --background-primary: 195deg 7% 13%;
-    --background-secondary: 200deg 6% 10%;
-
-    --border: 77deg 109% 141%;
-    --primary: 209deg 29% 20%;
-  
+    /* barras e texto */
+    --primary: 208deg 30% 20%;
+    /* selecionado */
+    --focus: 208deg 30% 75%;
+    /* bg geral */
+    --secondary: 200deg 6% 10%;
+    /* bg dentro */
+    --content: 195deg 6% 13%;
+    /* text sem destaque cinza, hover icon... */
+    --muted: 0deg 0% 80%;
+    /* text */
     --text: 36deg 10% 90%;
-    --text-muted: 36deg 10% 90%;
   }
 }
 
 body {
   background: linear-gradient(to bottom, hsl(var(--top)), hsl(var(--middle)), hsl(var(--bottom)));
-}
-
-footer {
-  background: hsla(var(--background-black));
 }
 
 @font-face {

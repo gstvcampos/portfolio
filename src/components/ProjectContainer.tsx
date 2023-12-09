@@ -3,13 +3,11 @@ import LinkSmall from './LinkSmall'
 
 export default function ProjectContainer({ id }: { id: number }) {
   return (
-    <div className="w-full bg-content-2 ">
+    <div className="bg-content w-full md:min-h-[600px]">
       {projects.map((project) =>
         project.id === id ? (
           <div key={project.id} className="m-4 flex flex-col gap-2 p-4">
-            <h2 className="mb-2 font-segoe-bold text-2xl text-text-2">
-              {project.name}
-            </h2>
+            <h2 className="mb-2 font-segoe-bold text-3xl">{project.name}</h2>
             {project.description.split('\n').map((paragraph, index) => {
               return <p key={index}>{paragraph}</p>
             })}

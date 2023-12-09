@@ -12,8 +12,8 @@ export default function FooterBtn({
   children: ReactNode
 }) {
   const pathname = usePathname() === page
-  const current = ' h-20 rounded-xl bg-gray-2 bg-opacity-50 relative'
-  const comun = ' h-20 hover:bg-gray-2 bg-opacity-60 rounded-xl relative'
+  const current = ' h-20 rounded-xl bg-focus relative'
+  const comun = ' h-20 hover:bg-focus rounded-xl relative'
 
   return (
     <Link href={page} className={pathname ? current : comun}>

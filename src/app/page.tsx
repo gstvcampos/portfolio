@@ -33,7 +33,7 @@ export default async function Home() {
             sou um desenvolvedor fullstack apaixonado por tecnologia. Meu
             objetivo é criar interfaces de usuário bonitas e funcionais.
           </p>
-          <h3 className="text-text-2 font-segoe-bold">Alguns fatos</h3>
+          <h3 className="font-segoe-bold text-text-2">Alguns fatos</h3>
           <ul className="m-2">
             <li>Meu nome completo é Gustavo Campos Rodrigues</li>
             <li>Eu nasci em 1995</li>
@@ -41,7 +41,7 @@ export default async function Home() {
               Uma palavre para descrever minha personalidade: Introvertido
             </li>
           </ul>
-          <h3 className="text-text-2 font-segoe-bold">Alguns curiosidades</h3>
+          <h3 className="font-segoe-bold text-text-2">Alguns curiosidades</h3>
           <ul className="m-2">
             <li>sou vascaino</li>
             <li>sou vascaino</li>

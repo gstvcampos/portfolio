@@ -10,7 +10,7 @@ export interface Project {
 
 export default function Projetos() {
   return (
-    <main className="h-full w-full bg-content-1 md:h-fit md:max-h-[calc(100%-16px)] lg:max-w-4xl">
+    <main className="h-full w-full bg-content-1 md:h-fit lg:max-w-4xl">
       <Header innerText={'../projetos'} />
       <section className="flex h-[calc(100%-48px)] flex-col overflow-auto p-4 md:flex-row">
         <FolderBtn />

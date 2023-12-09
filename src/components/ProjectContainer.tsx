@@ -10,7 +10,9 @@ export default function ProjectContainer({ id }: { id: number }) {
             <h2 className="mb-2 font-segoe-bold text-2xl text-text-2">
               {project.name}
             </h2>
-            <p>{project.description}</p>
+            {project.description.split('\n').map((paragraph, index) => {
+              return <p key={index}>{paragraph}</p>
+            })}
             <div className="flex w-fit gap-5">
               {project.deploy ? (
                 <LinkSmall href={project.deploy} innerText="Deploy" />

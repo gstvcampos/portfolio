@@ -46,9 +46,6 @@ export default async function Home() {
           <ul className="m-2">
             <li>Meu nome completo é Gustavo Campos Rodrigues</li>
             <li>Eu nasci em 1995</li>
-            <li>
-              Uma palavre para descrever minha personalidade: Introvertido
-            </li>
           </ul>
           <h3 className="font-segoe-bold text-focus">Alguns curiosidades</h3>
           <ul className="m-2">

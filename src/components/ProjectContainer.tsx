@@ -3,7 +3,7 @@ import LinkSmall from './LinkSmall'
 
 export default function ProjectContainer({ id }: { id: number }) {
   return (
-    <div className="bg-content w-full md:min-h-[600px]">
+    <div className="w-full bg-content md:min-h-[600px]">
       {projects.map((project) =>
         project.id === id ? (
           <div key={project.id} className="m-4 flex flex-col gap-2 p-4">

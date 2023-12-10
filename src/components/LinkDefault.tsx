@@ -14,9 +14,9 @@ export default function LinkDefault({
     <Link
       target="_blank"
       href={href}
-      className="bg-content hover:bg-focus hover:text-secondary min-w-[150px] md:w-full"
+      className="min-w-[150px] bg-content hover:bg-focus hover:text-secondary md:w-full"
     >
-      <span className="hover:border-focus flex items-center border-b-4">
+      <span className="flex items-center border-b-4 hover:border-focus">
         <span className="border-r-[1px] px-3 py-1">
           <span className="flex w-6">{children}</span>
         </span>

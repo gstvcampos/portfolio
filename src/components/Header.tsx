@@ -3,7 +3,7 @@ import { GitHubIcon, LinkedinIcon } from './Icons'
 
 export default function Header({ innerText }: { innerText: string }) {
   return (
-    <header className="bg-primary text-title flex h-12 justify-between p-3">
+    <header className="flex h-12 justify-between bg-primary p-3 text-title">
       <span className="text-text">{innerText}</span>
       <div className="flex gap-4">
         <Link

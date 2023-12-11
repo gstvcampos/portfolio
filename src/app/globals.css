@@ -9,7 +9,9 @@
   --purple: 321deg 70% 50%;
   --border: 220deg 13% 95%;
   /* barras e texto */
-  --primary: 210deg 0% 60%;
+  --primary: 0deg 0% 7%;
+  /* barras e texto */
+    --primary: 0deg 0% 7%;
   /* selecionado */
   --focus: 210deg 29% 16%;
   /* bg geral */
@@ -24,28 +26,6 @@
   --title: 36deg 10% 90%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --top: 321deg 97% 15%;
-    --middle: 324deg 97% 19%;
-    --bottom: 355deg 65% 39%;
-    --purple: 321deg 70% 50%;
-    /* barras e texto */
-    --primary: 210deg 0% 5%;
-    /* selecionado */
-    --focus: 208deg 30% 75%;
-    /* bg geral */
-    --secondary: 200deg 6% 10%;
-    /* bg dentro */
-    --content: 195deg 6% 13%;
-    /* text sem destaque cinza, hover icon... */
-    --muted: 0deg 0% 50%;
-    /* text */
-    --text: 36deg 10% 90%;
-    /* title */
-    --title: 36deg 10% 90%;
-  }
-}
 
 body {
   background: linear-gradient(to bottom, hsl(var(--top)), hsl(var(--middle)), hsl(var(--bottom)));

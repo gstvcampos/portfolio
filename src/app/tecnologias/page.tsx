@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Tecnologias() {
   return (
     <main className="h-full w-full bg-secondary md:h-auto lg:max-w-4xl">
-      <Header innerText={'../tecnologias'} />
+      <h1 className="h-12 bg-primary p-3 text-title">../tecnologias</h1>
       <section className="h-[calc(100%-48px)] overflow-auto p-4">
         <ul className="grid w-full grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {technologies.map((tech, index) => (

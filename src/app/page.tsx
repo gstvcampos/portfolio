@@ -1,12 +1,11 @@
-import Header from '@/components/Header'
-import { MailIcon, ResumeIcon } from '@/components/Icons'
 import LinkDefault from '@/components/LinkDefault'
+import { MailIcon, ResumeIcon } from '@/db/Icons'
 import Image from 'next/image'
 
 export default async function Home() {
   return (
     <main className="h-full w-full bg-secondary md:h-auto lg:max-w-4xl">
-      <Header innerText={'../perfil'} />
+      <h1 className="h-12 bg-primary p-3 text-title">../perfil</h1>
       <section className="flex h-[calc(100%-48px)] flex-col gap-4 overflow-auto p-4 md:flex-row">
         <div>
           <Image

@@ -13,7 +13,7 @@ import {
   StyledComponentsIcon,
   TailwindIcon,
   TypeScriptIcon,
-} from '@/components/Icons'
+} from '@/db/Icons'
 
 export const technologies = [
   {

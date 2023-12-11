@@ -2,7 +2,7 @@
 
 import { projects } from '@/db/projects'
 import { useState } from 'react'
-import { CloseFolderIcon, OpendedFolderIcon } from './Icons'
+import { CloseFolderIcon, OpendedFolderIcon } from '../db/Icons'
 import ProjectContainer from './ProjectContainer'
 
 export default function FolderProjects() {

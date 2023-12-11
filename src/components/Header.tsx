@@ -1,11 +1,13 @@
 import Link from 'next/link'
-import { GitHubIcon, LinkedinIcon } from './Icons'
+import { GitHubIcon, LinkedinIcon } from '../db/Icons'
+import Clock from './Clock'
 
-export default function Header({ innerText }: { innerText: string }) {
+export default function Header() {
   return (
-    <header className="flex h-12 justify-between bg-primary p-3 text-title">
-      <span className="text-text">{innerText}</span>
-      <div className="flex gap-4">
+    <header className="flex h-9 items-center justify-between bg-primary text-title">
+      <span className="mx-5">Atividades</span>
+      <Clock />
+      <div className="mx-5 flex h-4 gap-3">
         <Link
           target="_blank"
           href="https://www.linkedin.com/in/gstvcampos/"

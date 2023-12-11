@@ -12,14 +12,21 @@ const config: Config = {
       'segoe-bold': ['Segoe UI Bold', 'sans-serif'],
     },
     colors: {
-      primary: 'hsl(var(--primary) / <alpha-value>)',
+      bar: {
+        1: 'hsl(var(--bar-primary) / <alpha-value>)',
+        2: 'hsl(var(--bar-secondary) / <alpha-value>)',
+      },
+      content: {
+        1: 'hsl(var(--content-primary) / <alpha-value>)',
+        2: 'hsl(var(--content-secondary) / <alpha-value>)',
+      },
+      txt: {
+        1: 'hsl(var(--txt-primary) / <alpha-value>)',
+        2: 'hsl(var(--txt-secondary) / <alpha-value>)',
+      },
+      border: 'hsl(var(--border) / <alpha-value>)',
       focus: 'hsl(var(--focus) / <alpha-value>)',
-      secondary: 'hsl(var(--secondary) / <alpha-value>)',
-      content: 'hsl(var(--content) / <alpha-value>)',
-      muted: 'hsl(var(--muted) / <alpha-value>)',
-      text: 'hsl(var(--text) / <alpha-value>)',
       purple: 'hsl(var(--purple) / <alpha-value>)',
-      title: 'hsl(var(--title) / <alpha-value>)',
     },
   },
   plugins: [],

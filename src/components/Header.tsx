@@ -4,7 +4,7 @@ import Clock from './Clock'
 
 export default function Header() {
   return (
-    <header className="flex h-9 items-center justify-between bg-primary text-title">
+    <header className="bg-bar-1 flex h-9 items-center justify-between">
       <span className="mx-5">Atividades</span>
       <Clock />
       <div className="mx-5 flex h-4 gap-3">

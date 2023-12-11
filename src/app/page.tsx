@@ -4,8 +4,10 @@ import Image from 'next/image'
 
 export default async function Home() {
   return (
-    <main className="h-full w-full bg-secondary md:h-auto lg:max-w-4xl">
-      <h1 className="h-12 bg-primary p-3 text-title">../perfil</h1>
+    <main className="h-full w-full overflow-hidden rounded-t-lg border-[1px] md:h-auto lg:max-w-4xl">
+      <div className="bg-bar-2 h-10">
+        <h1>Perfil</h1>
+      </div>
       <section className="flex h-[calc(100%-48px)] flex-col gap-4 overflow-auto p-4 md:flex-row">
         <div>
           <Image

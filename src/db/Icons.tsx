@@ -1063,10 +1063,10 @@ export const SkillsIcon = () => (
     <text
       x="40%"
       y="70%"
-      dominant-baseline="middle"
-      text-anchor="middle"
+      dominantBaseline="middle"
+      textAnchor="middle"
       fill="white"
-      font-size="10px"
+      fontSize="10px"
     >
       ~skills
     </text>

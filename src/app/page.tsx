@@ -11,7 +11,7 @@ export default async function Home() {
         <div className="h-full w-full bg-content-2 p-4">
           <h2 className="text-3xl">
             Ola, eu sou o
-            <span className="text-txt-3 font-segoe-bold"> Gustavo Campos</span>
+            <span className="font-segoe-bold text-txt-3"> Gustavo Campos</span>
           </h2>
           <p className="text-muted">desenvolvedor web fullstack</p>
           <p className="m-2">

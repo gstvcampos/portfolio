@@ -1,5 +1,6 @@
 'use client'
 
+import { useOutClick } from '@/hooks/useOutClick'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
@@ -10,11 +11,9 @@ export default function ModalBtn() {
     setModalOpen(!modalOpen)
   }
 
-  const handleOutsideClick = (event: React.MouseEvent) => {
-    if (event.target === event.currentTarget) {
-      setModalOpen(false)
-    }
-  }
+  const modalRef = useOutClick(() => {
+    setModalOpen(false)
+  })
 
   const handleKeyDown = (event: KeyboardEvent) => {
     if (event.key === 'Escape') {
@@ -47,8 +46,11 @@ export default function ModalBtn() {
         />
       </button>
       {modalOpen && (
-        <div className="fixed inset-0 z-10" onClick={handleOutsideClick}>
-          <div className="flex h-full items-end justify-center bg-txt-3">
+        <div className="fixed inset-0 z-10">
+          <div
+            className="flex h-full items-end justify-center bg-txt-3"
+            ref={modalRef}
+          >
             <div className="mb-20 h-60 bg-txt-1">
               <button>linkdin</button>
               <button>github</button>

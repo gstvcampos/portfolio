@@ -15,6 +15,7 @@ const config: Config = {
       bar: {
         1: 'hsl(var(--bar-primary) / <alpha-value>)',
         2: 'hsl(var(--bar-secondary) / <alpha-value>)',
+        3: 'hsl(var(--bar-tertiary) / <alpha-value>)',
       },
       content: {
         1: 'hsl(var(--content-primary) / <alpha-value>)',
@@ -23,10 +24,10 @@ const config: Config = {
       txt: {
         1: 'hsl(var(--txt-primary) / <alpha-value>)',
         2: 'hsl(var(--txt-secondary) / <alpha-value>)',
+        3: 'hsl(var(--text-tertiary) / <alpha-value>)',
       },
       border: 'hsl(var(--border) / <alpha-value>)',
       focus: 'hsl(var(--focus) / <alpha-value>)',
-      purple: 'hsl(var(--purple) / <alpha-value>)',
     },
   },
   plugins: [],

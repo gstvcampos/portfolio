@@ -6,16 +6,17 @@
   --top: 321deg 97% 15%;
   --middle: 324deg 97% 19%;
   --bottom: 355deg 65% 39%;
-  --purple: 321deg 70% 50%;
-  --bar-primary: 0deg 0% 7%;
-  --bar-secondary: 60deg 2% 12%;
-  --content-primary: 240deg 1% 15%;
-  --content-secondary: 180deg 1% 17%;
 
+  --bar-primary: 240deg 3% 6%;
+  --bar-secondary: 300deg 1% 17%;
+  --bar-tertiary: 280deg 3% 19%;
+  --content-primary: 0deg 0% 20%;
+  --content-secondary: 240deg 3% 6%;
   --txt-primary: 0deg 0% 100%;
   --text-secondary: 60deg 0% 53%;
+  --text-tertiary: 334deg 72% 48%;
   --border:: 220deg 13% 95%;
-  --focus: 210deg 29% 16%;
+  --focus: 300deg 1% 33%;
 }
 
 body {

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { ViewMoreIcon } from '../db/Icons'
 import FooterBtn from './FooterBtn'
 
 export default function Footer() {
@@ -34,7 +33,13 @@ export default function Footer() {
           />
         </FooterBtn>
         <FooterBtn page="/">
-          <ViewMoreIcon />
+          <Image
+            priority={true}
+            src="/apps.svg"
+            width={48}
+            height={48}
+            alt={'icone apps'}
+          />
         </FooterBtn>
       </nav>
     </footer>

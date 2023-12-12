@@ -13,7 +13,7 @@ export default async function Home() {
             Ola, eu me chamo
             <span className="font-segoe-bold text-txt-3"> Gustavo Campos</span>
           </h2>
-          <p className="text-muted">desenvolvedor web fullstack</p>
+          <p className="text-txt-2">desenvolvedor web fullstack</p>
           <p className="m-2">
             sou um desenvolvedor fullstack apaixonado por tecnologia. Meu
             objetivo é criar interfaces de usuário bonitas e funcionais.

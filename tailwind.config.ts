@@ -24,7 +24,7 @@ const config: Config = {
       txt: {
         1: 'hsl(var(--txt-primary) / <alpha-value>)',
         2: 'hsl(var(--txt-secondary) / <alpha-value>)',
-        3: 'hsl(var(--text-tertiary) / <alpha-value>)',
+        3: 'hsl(var(--txt-tertiary) / <alpha-value>)',
       },
       border: 'hsl(var(--border) / <alpha-value>)',
       focus: 'hsl(var(--focus) / <alpha-value>)',

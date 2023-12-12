@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import FooterBtn from './FooterBtn'
+import ModalBtn from './ModalBtn'
 
 export default function Footer() {
   return (
@@ -32,15 +33,7 @@ export default function Footer() {
             alt={'icone projetos'}
           />
         </FooterBtn>
-        <button className="rounded-xl p-2 hover:bg-focus">
-          <Image
-            priority={true}
-            src="/apps.svg"
-            width={48}
-            height={48}
-            alt={'icone apps'}
-          />
-        </button>
+        <ModalBtn />
       </nav>
     </footer>
   )

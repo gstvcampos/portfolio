@@ -7,7 +7,7 @@ export default function Tecnologias() {
   return (
     <main className="h-full w-full bg-bar-2 md:h-auto lg:max-w-4xl">
       <WindowBar innerText="Tecnologias" />
-      <section className="h-[calc(100%-48px)] overflow-auto bg-content-2 p-4">
+      <section className="h-[calc(100%-40px)] overflow-auto bg-content-2 p-4">
         <ul className="grid w-full grid-cols-2 gap-y-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {technologies.map((tech, index) => (
             <li key={index}>

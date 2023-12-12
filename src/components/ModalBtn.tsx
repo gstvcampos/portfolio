@@ -48,7 +48,7 @@ export default function ModalBtn() {
       </button>
       {modalOpen && (
         <div className="fixed inset-0 z-10" onClick={handleOutsideClick}>
-          <div className="flex h-full items-end justify-center">
+          <div className="flex h-full items-end justify-center bg-txt-3">
             <div className="mb-20 h-60 bg-txt-1">
               <button>linkdin</button>
               <button>github</button>

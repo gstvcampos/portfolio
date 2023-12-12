@@ -14,7 +14,7 @@ export default function FolderProjects() {
         {projects.map((project) => (
           <li
             key={project.id}
-            className={selectedId === project.id ? 'bg-content' : ''}
+            className={selectedId === project.id ? 'bg-content-2' : ''}
           >
             <button
               onClick={() => setSelectedId(project.id)}

@@ -1,90 +1,73 @@
-import {
-  CssIcon,
-  DjangoIcon,
-  HtmlIcon,
-  JavaScriptIcon,
-  NestIcon,
-  NextIcon,
-  NodeIcon,
-  PostgresIcon,
-  PrismaIcon,
-  PythonIcon,
-  ReactIcon,
-  StyledComponentsIcon,
-  TailwindIcon,
-  TypeScriptIcon,
-} from '@/db/Icons'
-
 export const technologies = [
   {
     name: 'HTML',
-    icon: <HtmlIcon />,
+    icon: 'html.svg',
     documentationLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
   },
   {
     name: 'CSS',
-    icon: <CssIcon />,
+    icon: 'css.svg',
     documentationLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
   },
   {
     name: 'JavaScript',
-    icon: <JavaScriptIcon />,
+    icon: 'javascript.svg',
     documentationLink:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
   {
     name: 'TypeScript',
-    icon: <TypeScriptIcon />,
+    icon: 'typescript.svg',
     documentationLink: 'https://www.typescriptlang.org/docs/',
   },
   {
     name: 'Python',
-    icon: <PythonIcon />,
+    icon: 'python.svg',
     documentationLink: 'https://docs.python.org/3/',
   },
   {
     name: 'Styled Components',
-    icon: <StyledComponentsIcon />,
+    icon: 'styled.svg',
     documentationLink: 'https://styled-components.com/docs',
   },
   {
     name: 'Tailwind',
-    icon: <TailwindIcon />,
+    icon: 'tailwind.svg',
     documentationLink: 'https://tailwindcss.com/docs',
   },
   {
     name: 'Node',
-    icon: <NodeIcon />,
+    icon: 'node.svg',
     documentationLink: 'https://nodejs.org/en/docs/',
   },
   {
     name: 'React',
-    icon: <ReactIcon />,
+    icon: 'react.svg',
     documentationLink: 'https://reactjs.org/docs/getting-started.html',
   },
   {
     name: 'Next',
-    icon: <NextIcon />,
+    icon: 'next.svg',
     documentationLink: 'https://nextjs.org/',
   },
   {
     name: 'Django',
-    icon: <DjangoIcon />,
+    icon: 'django.svg',
     documentationLink: 'https://docs.djangoproject.com/',
   },
   {
     name: 'Nest',
-    icon: <NestIcon />,
+    icon: 'nest.svg',
     documentationLink: 'https://nestjs.com/',
   },
   {
-    name: 'Postgres',
-    icon: <PostgresIcon />,
+    name: 'PostgreSQL',
+    icon: 'postgresql.svg',
     documentationLink: 'https://www.postgresql.org/docs/',
   },
   {
     name: 'Prisma',
-    icon: <PrismaIcon />,
+    icon: 'prisma.svg',
     documentationLink: 'https://www.prisma.io/docs/',
   },
 ]

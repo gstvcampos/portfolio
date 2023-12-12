@@ -1,5 +1,6 @@
 import WindowBar from '@/components/WindowBar'
 import { technologies } from '@/db/technologies'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Tecnologias() {
@@ -15,12 +16,19 @@ export default function Tecnologias() {
                 href={tech.documentationLink}
                 className="group relative box-border flex w-full flex-col items-center text-center"
               >
-                <span className="mb-1 rounded-3xl bg-content-1 p-6 transition duration-500 ease-in-out group-hover:rounded-full group-hover:bg-focus">
-                  <span className="block h-12 w-12 transition duration-1000 ease-in-out group-hover:scale-125">
-                    {tech.icon}
-                  </span>
+                <span className="rounded-3xl bg-content-1 p-6 transition duration-500 ease-in-out group-hover:rounded-full group-hover:bg-focus">
+                  <Image
+                    className="h-12 transition duration-1000 ease-in-out group-hover:scale-125"
+                    priority={true}
+                    src={tech.icon}
+                    width={48}
+                    height={48}
+                    alt={'icone profile'}
+                  />
                 </span>
-                <span className="font-segoe-bold">{tech.name}</span>
+                <span className="font-segoe-bold group-hover:text-txt-3">
+                  {tech.name}
+                </span>
               </Link>
             </li>
           ))}

@@ -32,7 +32,7 @@ export default function Footer() {
             alt={'icone projetos'}
           />
         </FooterBtn>
-        <FooterBtn page="/">
+        <button className="rounded-xl p-2 hover:bg-focus">
           <Image
             priority={true}
             src="/apps.svg"
@@ -40,7 +40,7 @@ export default function Footer() {
             height={48}
             alt={'icone apps'}
           />
-        </FooterBtn>
+        </button>
       </nav>
     </footer>
   )

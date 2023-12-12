@@ -14,7 +14,9 @@ export default function FolderProjects() {
         {projects.map((project) => (
           <li
             key={project.id}
-            className={selectedId === project.id ? 'bg-content-2' : ''}
+            className={
+              selectedId === project.id ? 'bg-content-2' : 'hover:bg-focus'
+            }
           >
             <button
               onClick={() => setSelectedId(project.id)}

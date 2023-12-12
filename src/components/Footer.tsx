@@ -5,7 +5,7 @@ import FooterBtn from './FooterBtn'
 export default function Footer() {
   return (
     <footer className="absolute bottom-0 w-full">
-      <nav className="bg-bar-3 m-auto flex justify-center gap-2 p-1 pb-1 md:w-fit md:rounded-t-lg">
+      <nav className="m-auto flex justify-center gap-2 bg-bar-2 p-1 pb-1 md:w-fit md:rounded-t-lg">
         <FooterBtn page="/">
           <Image
             priority={true}

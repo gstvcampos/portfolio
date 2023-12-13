@@ -19,7 +19,7 @@ export default function Tecnologias() {
                 href={tech.documentationLink}
                 className="group relative box-border flex w-full flex-col items-center text-center"
               >
-                <span className="rounded-3xl bg-content-1 p-6 transition duration-500 ease-in-out group-hover:rounded-full group-hover:bg-focus">
+                <span className="rounded-3xl bg-content-1 p-6 transition duration-500 ease-in-out group-hover:rounded-full group-hover:bg-focus-2">
                   <Image
                     className="h-12 transition duration-1000 ease-in-out group-hover:scale-125"
                     priority={true}

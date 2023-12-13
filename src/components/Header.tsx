@@ -11,14 +11,14 @@ export default function Header() {
         <Link
           target="_blank"
           href="https://www.linkedin.com/in/gstvcampos/"
-          className="hover:text-focus"
+          className="hover:text-focus-1"
         >
           <LinkedinIcon />
         </Link>
         <Link
           target="_blank"
           href="https://github.com/gstvcampos"
-          className="hover:text-focus"
+          className="hover:text-focus-1"
         >
           <GitHubIcon />
         </Link>

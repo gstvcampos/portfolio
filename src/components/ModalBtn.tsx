@@ -20,7 +20,7 @@ export default function ModalBtn() {
     <>
       <button
         ref={buttonRef}
-        className="focus:focus rounded-xl p-2 hover:bg-focus"
+        className="rounded-xl p-2 hover:bg-focus-1"
         onClick={handleButtonClick}
       >
         <Image
@@ -38,7 +38,7 @@ export default function ModalBtn() {
               <Link
                 target="_blank"
                 href="https://www.linkedin.com/in/gstvcampos/"
-                className="flex rounded-lg px-4 py-2 hover:bg-focus"
+                className="flex rounded-lg px-4 py-2 hover:bg-focus-1"
               >
                 <span className="flex h-8 items-center gap-4">
                   <LinkedinIcon />
@@ -48,7 +48,7 @@ export default function ModalBtn() {
               <Link
                 target="_blank"
                 href="https://github.com/gstvcampos"
-                className="flex rounded-lg px-4 py-2 hover:bg-focus"
+                className="flex rounded-lg px-4 py-2 hover:bg-focus-1"
               >
                 <span className="flex h-8 items-center gap-4">
                   <GitHubIcon />
@@ -58,7 +58,7 @@ export default function ModalBtn() {
               <Link
                 target="_blank"
                 href="https://drive.google.com/file/d/19jXlYk8KhZ7I_-YOU4pTGUK5lzSYZv3B/view?usp=drive_link"
-                className="flex rounded-lg px-4 py-2 hover:bg-focus"
+                className="flex rounded-lg px-4 py-2 hover:bg-focus-1"
               >
                 <span className="flex h-8 items-center gap-4">
                   <ResumeIcon />
@@ -68,7 +68,7 @@ export default function ModalBtn() {
               <Link
                 target="_blank"
                 href="mailto:gustavo.bmc76@gmail.com"
-                className="flex rounded-lg px-4 py-2 hover:bg-focus"
+                className="flex rounded-lg px-4 py-2 hover:bg-focus-1"
               >
                 <span className="flex h-8 items-center gap-4">
                   <MailIcon />

@@ -25,8 +25,10 @@ const config: Config = {
         2: 'hsl(var(--txt-secondary) / <alpha-value>)',
         3: 'hsl(var(--txt-tertiary) / <alpha-value>)',
       },
-      border: 'hsl(var(--border) / <alpha-value>)',
-      focus: 'hsl(var(--focus) / <alpha-value>)',
+      focus: {
+        1: 'hsl(var(--focus-primary) / <alpha-value>)',
+        2: 'hsl(var(--focus-secondary) / <alpha-value>)',
+      },
     },
   },
   plugins: [],

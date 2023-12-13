@@ -17,19 +17,19 @@ export default function WindowBar({
       <h1>{innerText}</h1>
       <div className="flex h-full gap-3 p-2">
         <Link
-          className="rounded-full bg-focus p-1 hover:bg-content-1"
+          className="bg-focus-1 rounded-full p-1 hover:bg-content-1"
           href={'/desktop'}
         >
           <MinimizeIcon />
         </Link>
         <button
-          className="rounded-full bg-focus p-1 hover:bg-content-1"
+          className="bg-focus-1 rounded-full p-1 hover:bg-content-1"
           onClick={() => goFullScreen({ elementId })}
         >
           <MaximizeIcon />
         </button>
         <Link
-          className="rounded-full bg-focus p-1 hover:bg-content-1"
+          className="bg-focus-1 rounded-full p-1 hover:bg-content-1"
           href={'/desktop'}
         >
           <CloseIcon />

@@ -17,7 +17,7 @@ export default function FooterBtn({
     <Link
       href={page}
       className={`relative rounded-xl p-2 ${
-        pathname ? 'bg-focus' : 'hover:bg-focus'
+        pathname ? 'bg-focus-1' : 'hover:bg-focus-1'
       }`}
     >
       <div className="h-14">{children}</div>

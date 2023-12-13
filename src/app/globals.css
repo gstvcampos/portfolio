@@ -14,8 +14,8 @@
   --txt-primary: 0deg 0% 90%;
   --txt-secondary: 0deg 0% 60%;
   --txt-tertiary: 334deg 72% 48%;
-  --border:: 220deg 13% 95%;
-  --focus: 300deg 1% 33%;
+  --focus-primary: 300deg 1% 33%;
+  --focus-secondary: 334deg 33% 48%;
 }
 
 body {

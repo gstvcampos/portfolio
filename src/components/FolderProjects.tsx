@@ -15,7 +15,7 @@ export default function FolderProjects() {
           <li
             key={project.id}
             className={
-              selectedId === project.id ? 'bg-content-2' : 'hover:bg-focus'
+              selectedId === project.id ? 'bg-content-2' : 'hover:bg-focus-1'
             }
           >
             <button

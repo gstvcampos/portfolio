@@ -1,6 +1,5 @@
 'use client'
 
-import { useOutClick } from '@/hooks/useOutClick'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
@@ -11,14 +10,14 @@ export default function ModalBtn() {
     setModalOpen(!modalOpen)
   }
 
-  const modalRef = useOutClick(() => {
-    setModalOpen(false)
-  })
-
   const handleKeyDown = (event: KeyboardEvent) => {
     if (event.key === 'Escape') {
       setModalOpen(false)
     }
+  }
+
+  const handleCloseModal = () => {
+    setModalOpen(false)
   }
 
   useEffect(() => {
@@ -46,16 +45,15 @@ export default function ModalBtn() {
         />
       </button>
       {modalOpen && (
-        <div className="fixed inset-0 z-10">
-          <div
-            className="flex h-full items-end justify-center bg-txt-3"
-            ref={modalRef}
-          >
-            <div className="mb-20 h-60 bg-txt-1">
-              <button>linkdin</button>
-              <button>github</button>
-              <button>github</button>
-            </div>
+        <div className="fixed inset-0 z-10 flex items-center justify-center bg-bar-3 bg-opacity-75">
+          <div className="bg-white w-1/2 rounded p-4 shadow-md">
+            <p>Modal Content</p>
+            <button
+              className="bg-blue-500 hover:bg-blue-700 text-white mt-4 rounded px-4 py-2"
+              onClick={handleCloseModal}
+            >
+              Close
+            </button>
           </div>
         </div>
       )}

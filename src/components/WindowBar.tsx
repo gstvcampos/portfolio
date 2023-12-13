@@ -12,7 +12,7 @@ export default function WindowBar({
   elementId: string
 }) {
   return (
-    <div className="flex h-10 items-center justify-between border-b-[1px]">
+    <div className="flex h-10 items-center justify-between bg-bar-2">
       <span></span>
       <h1>{innerText}</h1>
       <div className="flex h-full gap-3 p-2">

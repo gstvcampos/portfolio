@@ -15,7 +15,6 @@ const config: Config = {
       bar: {
         1: 'hsl(var(--bar-primary) / <alpha-value>)',
         2: 'hsl(var(--bar-secondary) / <alpha-value>)',
-        3: 'hsl(var(--bar-tertiary) / <alpha-value>)',
       },
       content: {
         1: 'hsl(var(--content-primary) / <alpha-value>)',

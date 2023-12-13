@@ -7,7 +7,7 @@ export default async function Home() {
   return (
     <main
       id="home"
-      className="h-full w-full overflow-hidden rounded-t-lg bg-bar-2 md:h-auto lg:max-w-4xl"
+      className="h-full w-full overflow-hidden md:h-auto md:rounded-t-lg lg:max-w-4xl"
     >
       <WindowBar innerText="Perfil" elementId="home" />
       <section className="flex h-[calc(100%-40px)] flex-col-reverse overflow-auto md:flex-row">
@@ -32,7 +32,7 @@ export default async function Home() {
             <li>sou vascaino</li>
           </ul>
         </div>
-        <div className="px-4 py-2">
+        <div className="bg-content-1 px-4 py-2">
           <Image
             className="m-auto"
             priority={true}

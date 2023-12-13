@@ -7,7 +7,7 @@ export default function Tecnologias() {
   return (
     <main
       id="tecnologias"
-      className="h-full w-full bg-bar-2 md:h-auto lg:max-w-4xl"
+      className="h-full w-full md:h-auto md:rounded-t-lg lg:max-w-4xl"
     >
       <WindowBar innerText="Tecnologias" elementId="tecnologias" />
       <section className="h-[calc(100%-40px)] overflow-auto bg-content-2 p-4">

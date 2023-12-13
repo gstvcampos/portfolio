@@ -8,7 +8,11 @@ export default function LinkSmall({
   href: string
 }) {
   return (
-    <Link target="_blank" href={href} className="border-b-2 font-segoe-bold">
+    <Link
+      target="_blank"
+      href={href}
+      className="border-b-2 font-segoe-bold hover:text-txt-3"
+    >
       <span className="px-2">{innerText}</span>
     </Link>
   )

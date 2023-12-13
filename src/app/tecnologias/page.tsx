@@ -7,10 +7,10 @@ export default function Tecnologias() {
   return (
     <main
       id="tecnologias"
-      className="h-full w-full md:h-auto md:rounded-t-lg lg:max-w-4xl"
+      className="flex max-h-full w-full flex-col overflow-hidden md:h-auto md:rounded-t-lg lg:max-w-4xl"
     >
       <WindowBar innerText="Tecnologias" elementId="tecnologias" />
-      <section className="h-[calc(100%-40px)] overflow-auto bg-content-2 p-4">
+      <section className="h-[calc(100%-40px)] flex-1 overflow-auto bg-content-2 p-4">
         <ul className="grid w-full grid-cols-2 gap-y-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {technologies.map((tech, index) => (
             <li key={index}>

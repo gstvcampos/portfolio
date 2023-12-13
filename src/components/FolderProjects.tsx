@@ -9,8 +9,8 @@ export default function FolderProjects() {
   const [selectedId, setSelectedId] = useState(0)
 
   return (
-    <>
-      <ul className="mb-6 flex flex-wrap md:flex-col">
+    <div className="flex h-full w-full flex-col md:flex-row">
+      <ul className="flex flex-wrap bg-content-1 md:flex-col">
         {projects.map((project) => (
           <li
             key={project.id}
@@ -42,7 +42,13 @@ export default function FolderProjects() {
           </li>
         ))}
       </ul>
-      <ProjectContainer id={selectedId} />
-    </>
+      {selectedId > 0 ? (
+        <ProjectContainer id={selectedId} />
+      ) : (
+        <div className="h-full w-full bg-content-2 text-center md:min-h-[600px]">
+          <h1 className="p-8 text-txt-2">Selecione alguma pasta</h1>
+        </div>
+      )}
+    </div>
   )
 }

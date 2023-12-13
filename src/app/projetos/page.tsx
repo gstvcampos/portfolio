@@ -12,10 +12,10 @@ export default function Projetos() {
   return (
     <main
       id="projetos"
-      className="h-full w-full md:h-auto md:rounded-t-lg lg:max-w-4xl"
+      className="flex max-h-full w-full flex-col overflow-hidden md:h-auto md:rounded-t-lg lg:max-w-4xl"
     >
       <WindowBar innerText="Projetos" elementId="projetos" />
-      <section className="flex h-[calc(100%-40px)] flex-col overflow-auto bg-content-1 md:flex-row">
+      <section className="h-[calc(100%-40px)] flex-1 overflow-auto">
         <FolderProjects />
       </section>
     </main>

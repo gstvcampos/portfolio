@@ -45,7 +45,7 @@ export default function FolderProjects() {
       {selectedId > 0 ? (
         <ProjectContainer id={selectedId} />
       ) : (
-        <div className="h-full w-full bg-content-2 text-center md:min-h-[600px]">
+        <div className="h-[600px] w-full bg-content-2 text-center">
           <h1 className="p-8 text-txt-2">Selecione alguma pasta</h1>
         </div>
       )}

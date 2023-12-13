@@ -14,7 +14,7 @@ export default async function Home() {
         <div className="flex flex-col-reverse md:flex-row ">
           <div className="bg-content-2 px-4 py-8">
             <h2 className="px-3 text-3xl">
-              Ola, sou
+              Ola, eu sou o
               <span className="font-segoe-bold text-txt-3"> Gustavo!</span>
             </h2>
             <p className="px-3 text-txt-2">desenvolvedor web fullstack</p>

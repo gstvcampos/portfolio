@@ -7,36 +7,38 @@ export default async function Home() {
   return (
     <main
       id="home"
-      className="flex max-h-full w-full flex-col overflow-hidden md:h-auto md:rounded-t-lg lg:max-w-4xl"
+      className="flex h-full max-h-full w-full flex-col overflow-hidden md:h-auto md:rounded-t-lg lg:max-w-4xl"
     >
       <WindowBar innerText="Perfil" elementId="home" />
       <section className="h-[calc(100%-40px)] flex-1 overflow-auto">
-        <div className="flex h-full flex-col-reverse md:flex-row">
-          <div className="h-full w-full bg-content-2 p-4">
+        <div className="flex flex-col-reverse md:flex-row">
+          <div className="bg-content-2 p-4">
             <h2 className="text-3xl">
-              Ola, eu me chamo
-              <span className="font-segoe-bold text-txt-3">
-                {' '}
-                Gustavo Campos
-              </span>
+              Ola, sou
+              <span className="font-segoe-bold text-txt-3"> Gustavo!</span>
             </h2>
             <p className="text-txt-2">desenvolvedor web fullstack</p>
-            <p className="m-2">
-              sou um desenvolvedor fullstack apaixonado por tecnologia. Meu
-              objetivo é criar interfaces de usuário bonitas e funcionais.
+            <p className="m-5">
+              👋 Bem-vindo ao meu portfólio! Eu sou um desenvolvedor fullstack,
+              originalmente do interior do Espírito Santo. Apaixonado por
+              tecnologia, sempre estou em busca de novos aprendizados.
             </p>
-            <h3 className="font-segoe-bold text-txt-3">Alguns fatos</h3>
-            <ul className="m-2">
-              <li>Meu nome completo é Gustavo Campos Rodrigues</li>
-              <li>Eu nasci em 1995</li>
-            </ul>
-            <h3 className="font-segoe-bold text-txt-3">Alguns curiosidades</h3>
-            <ul className="m-2">
-              <li>sou vascaino</li>
-              <li>sou vascaino</li>
-            </ul>
+            <p>
+              Eu sou um desenvolvedor fullstack, originalmente do interior do
+              Espírito Santo. Apaixonado por tecnologia, sempre estou em busca
+              de novos aprendizados.
+            </p>
+            <p>
+              Eu sou um desenvolvedor fullstack, originalmente do interior do
+              Espírito Santo. Apaixonado por tecnologia, sempre estou em busca
+              de novos aprendizados.
+            </p>
+            <p className="m-5">
+              👨‍💻 Neste espaço, você encontrará projetos que refletem minha
+              evolução no universo da programação.
+            </p>
           </div>
-          <div className="bg-content-1 px-4 py-2">
+          <div className="min-w-[200px] bg-content-1 p-4">
             <Image
               className="m-auto"
               priority={true}

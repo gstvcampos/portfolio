@@ -57,7 +57,7 @@ export default function ModalBtn() {
               </Link>
               <Link
                 target="_blank"
-                href="https://drive.google.com/file/d/1zTjgJNG4zljUYHPk7U1byQd-UCs_QmQN/view?usp=drive_link"
+                href="https://drive.google.com/file/d/19jXlYk8KhZ7I_-YOU4pTGUK5lzSYZv3B/view?usp=drive_link"
                 className="flex rounded-lg px-4 py-2 hover:bg-focus"
               >
                 <span className="flex h-8 items-center gap-4">

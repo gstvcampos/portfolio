@@ -2,27 +2,15 @@
 
 import { CloseIcon, MaximizeIcon, MinimizeIcon } from '@/db/Icons'
 import Link from 'next/link'
+import goFullScreen from './goFullScreen'
 
-export default function WindowBar({ innerText }: { innerText: string }) {
-  interface FullscreenElement extends HTMLElement {
-    mozRequestFullScreen?: () => Promise<void>
-    webkitRequestFullscreen?: () => Promise<void>
-    msRequestFullscreen?: () => Promise<void>
-  }
-
-  const goFullScreen = () => {
-    const docEl = document.documentElement as FullscreenElement
-    const requestFullScreen =
-      docEl.requestFullscreen ||
-      docEl.mozRequestFullScreen ||
-      docEl.webkitRequestFullscreen ||
-      docEl.msRequestFullscreen
-
-    if (requestFullScreen) {
-      requestFullScreen.call(docEl)
-    }
-  }
-
+export default function WindowBar({
+  innerText,
+  elementId,
+}: {
+  innerText: string
+  elementId: string
+}) {
   return (
     <div className="flex h-10 items-center justify-between border-b-[1px]">
       <span></span>
@@ -36,7 +24,7 @@ export default function WindowBar({ innerText }: { innerText: string }) {
         </Link>
         <button
           className="rounded-full bg-focus p-1 hover:bg-content-1"
-          onClick={goFullScreen}
+          onClick={() => goFullScreen({ elementId })}
         >
           <MaximizeIcon />
         </button>

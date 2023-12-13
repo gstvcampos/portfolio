@@ -5,8 +5,11 @@ import Image from 'next/image'
 
 export default async function Home() {
   return (
-    <main className="h-full w-full overflow-hidden rounded-t-lg bg-bar-2 md:h-auto lg:max-w-4xl">
-      <WindowBar innerText="Perfil" />
+    <main
+      id="home"
+      className="h-full w-full overflow-hidden rounded-t-lg bg-bar-2 md:h-auto lg:max-w-4xl"
+    >
+      <WindowBar innerText="Perfil" elementId="home" />
       <section className="flex h-[calc(100%-40px)] flex-col-reverse overflow-auto md:flex-row">
         <div className="h-full w-full bg-content-2 p-4">
           <h2 className="text-3xl">

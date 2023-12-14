@@ -46,7 +46,7 @@ export default async function Home() {
             <div className="mt-4 flex flex-wrap justify-center gap-4 md:flex-col">
               <LinkDefault
                 innerText="Currículo"
-                href="https://drive.google.com/file/d/19jXlYk8KhZ7I_-YOU4pTGUK5lzSYZv3B/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1jrGJ9Cqm193IuKJvPNoTZ3wLIg8yROfw/view?usp=drive_link"
               >
                 <ResumeIcon />
               </LinkDefault>

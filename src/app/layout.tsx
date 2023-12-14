@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" className="!scroll-smooth">
       <body
         className={
-          'h-[calc(100svh)] overflow-hidden font-segoe text-txt-1 antialiased'
+          'absolute inset-0 overflow-hidden font-segoe text-txt-1 antialiased'
         }
       >
         <Header />

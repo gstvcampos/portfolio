@@ -72,7 +72,7 @@ export default function ModalBtn() {
               >
                 <span className="flex h-8 items-center gap-4">
                   <MailIcon />
-                  Curriculo
+                  Email
                 </span>
               </Link>
             </div>

@@ -33,15 +33,15 @@ export default function ModalBtn() {
       </button>
       {modalOpen ? (
         <div className="absolute bottom-20 z-10" ref={modalRef}>
-          <div className="w-64 rounded-t-xl border-x-[1px] border-t-[1px] bg-content-2">
+          <div className="w-56 rounded-t-xl border-x-[1px] border-t-[1px] bg-content-2">
             <div className="flex flex-col px-2 pt-2">
               <Link
                 target="_blank"
                 href="https://www.linkedin.com/in/gstvcampos/"
                 className="flex rounded-lg px-4 py-2 hover:bg-focus-1"
               >
-                <span className="flex h-8 items-center gap-4">
-                  <LinkedinIcon />
+                <span className="flex items-center gap-4">
+                  <LinkedinIcon className="h-11 w-11" />
                   Linkedin
                 </span>
               </Link>
@@ -50,8 +50,8 @@ export default function ModalBtn() {
                 href="https://github.com/gstvcampos"
                 className="flex rounded-lg px-4 py-2 hover:bg-focus-1"
               >
-                <span className="flex h-8 items-center gap-4">
-                  <GitHubIcon />
+                <span className="flex items-center gap-4">
+                  <GitHubIcon className="h-11 w-11" />
                   GitHub
                 </span>
               </Link>
@@ -60,8 +60,8 @@ export default function ModalBtn() {
                 href="https://drive.google.com/file/d/1jrGJ9Cqm193IuKJvPNoTZ3wLIg8yROfw/view?usp=drive_link"
                 className="flex rounded-lg px-4 py-2 hover:bg-focus-1"
               >
-                <span className="flex h-8 items-center gap-4">
-                  <ResumeIcon />
+                <span className="flex items-center gap-4">
+                  <ResumeIcon className="h-11 w-11" />
                   Curriculo
                 </span>
               </Link>
@@ -70,8 +70,8 @@ export default function ModalBtn() {
                 href="mailto:gustavo.bmc76@gmail.com"
                 className="flex rounded-lg px-4 py-2 hover:bg-focus-1"
               >
-                <span className="flex h-8 items-center gap-4">
-                  <MailIcon />
+                <span className="flex items-center gap-4">
+                  <MailIcon className="h-11 w-11" />
                   Email
                 </span>
               </Link>

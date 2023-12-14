@@ -58,23 +58,25 @@ export const MailIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export const MaximizeIcon = () => (
+export const MaximizeIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
     height="1em"
     fill="currentColor"
+    {...props}
   >
     <path d="M3 3v10h10V3H3zm9 9H4V4h8v8z" />
   </svg>
 )
 
-export const MinimizeIcon = () => (
+export const MinimizeIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
     width="1em"
     height="1em"
+    {...props}
   >
     <path
       fill="var(--ci-primary-color, currentColor)"
@@ -84,13 +86,14 @@ export const MinimizeIcon = () => (
   </svg>
 )
 
-export const CloseIcon = () => (
+export const CloseIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     viewBox="0 0 256 256"
     width="1em"
     height="1em"
+    {...props}
   >
     <path d="M205.657 194.343a8 8 0 1 1-11.314 11.314L128 139.313l-66.343 66.344a8 8 0 0 1-11.314-11.314L116.687 128 50.343 61.657a8 8 0 0 1 11.314-11.314L128 116.687l66.343-66.344a8 8 0 0 1 11.314 11.314L139.313 128Z" />
   </svg>

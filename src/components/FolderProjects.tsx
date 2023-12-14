@@ -9,7 +9,7 @@ export default function FolderProjects() {
   const [selectedId, setSelectedId] = useState(0)
 
   return (
-    <div className="flex h-full w-full flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row">
       <ul className="flex flex-wrap bg-content-1 md:flex-col">
         {projects.map((project) => (
           <li

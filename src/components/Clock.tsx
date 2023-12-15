@@ -6,20 +6,23 @@ export default function Clock() {
   const [time, setTime] = useState<string | undefined>()
 
   useEffect(() => {
-    setTime(
-      new Date().toLocaleString('pt-BR', {
+    const formatDateTime = () => {
+      const date = new Date()
+      const time = date.toLocaleString('pt-BR', {
         hour: '2-digit',
         minute: '2-digit',
-      }),
-    )
+      })
+      const dayMonth = date.toLocaleString('pt-BR', {
+        month: 'short',
+        day: '2-digit',
+      })
+      return `${dayMonth} ${time}`
+    }
+
+    setTime(formatDateTime())
 
     const timer = setInterval(() => {
-      setTime(
-        new Date().toLocaleString('pt-BR', {
-          hour: '2-digit',
-          minute: '2-digit',
-        }),
-      )
+      setTime(formatDateTime())
     }, 1000)
 
     return () => {
@@ -27,5 +30,5 @@ export default function Clock() {
     }
   }, [])
 
-  return <span>{time}</span>
+  return <span className="text-sm">{time}</span>
 }

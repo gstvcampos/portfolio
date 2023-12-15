@@ -1,5 +1,5 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Dock from '@/components/Container/Dock'
+import TopBar from '@/components/Container/TopBar'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { ReactNode } from 'react'
@@ -12,17 +12,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="pt-br" className="!scroll-smooth">
       <body
         className={
           'relative h-screen overflow-hidden font-segoe text-txt-1 antialiased'
         }
       >
-        <Header />
+        <TopBar />
         <div className="relative flex h-[calc(100%-24px)] items-center justify-center">
           {children}
         </div>
-        <Footer />
+        <Dock />
         <SpeedInsights />
       </body>
     </html>

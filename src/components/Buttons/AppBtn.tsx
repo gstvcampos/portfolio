@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ReactNode } from 'react'
 
-export default function FooterBtn({
+export default function AppBtn({
   page,
   children,
 }: {

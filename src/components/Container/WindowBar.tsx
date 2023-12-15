@@ -2,7 +2,7 @@
 
 import { CloseIcon, MaximizeIcon, MinimizeIcon } from '@/db/Icons'
 import Link from 'next/link'
-import goFullScreen from './goFullScreen'
+import goFullScreen from '../goFullScreen'
 
 export default function WindowBar({
   innerText,

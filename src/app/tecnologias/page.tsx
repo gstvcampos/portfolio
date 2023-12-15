@@ -1,4 +1,4 @@
-import WindowBar from '@/components/WindowBar'
+import WindowBar from '@/components/Container/WindowBar'
 import { technologies } from '@/db/technologies'
 import Image from 'next/image'
 import Link from 'next/link'

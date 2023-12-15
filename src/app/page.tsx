@@ -1,5 +1,5 @@
-import LinkDefault from '@/components/LinkDefault'
-import WindowBar from '@/components/WindowBar'
+import LinkDefault from '@/components/Buttons/LinkDefault'
+import WindowBar from '@/components/Container/WindowBar'
 import { MailIcon, ResumeIcon } from '@/db/Icons'
 import Image from 'next/image'
 

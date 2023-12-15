@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         }
       >
         <Header />
-        <div className="relative flex h-[calc(100%-116px)] items-center justify-center">
+        <div className="relative flex h-[calc(100%-24px)] items-center justify-center">
           {children}
         </div>
         <Footer />

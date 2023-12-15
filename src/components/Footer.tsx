@@ -4,8 +4,8 @@ import ModalBtn from './ModalBtn'
 
 export default function Footer() {
   return (
-    <footer className="absolute bottom-0 w-full">
-      <nav className="m-auto flex justify-center gap-2 bg-bar-2 p-1 pb-1 md:w-fit md:rounded-t-lg">
+    <footer className="absolute bottom-1 w-full">
+      <nav className="m-auto flex w-fit gap-1 rounded-lg bg-bar-2 p-1">
         <FooterBtn page="/">
           <Image
             priority={true}

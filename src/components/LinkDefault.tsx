@@ -14,12 +14,10 @@ export default function LinkDefault({
     <Link
       target="_blank"
       href={href}
-      className="min-w-[150px] bg-content-2 hover:text-txt-3 md:w-full"
+      className="mx-1 my-3 inline-block min-w-[150px] border-b-4 bg-content-1 hover:bg-txt-3 md:mx-0 md:flex"
     >
-      <span className="flex items-center border-b-4">
-        <span className="border-r-[1px] px-3 py-1">
-          <span className="flex w-6">{children}</span>
-        </span>
+      <span className="flex items-center">
+        <span className="border-r-[1px] px-3">{children}</span>
         <span className="px-4 py-2">{innerText}</span>
       </span>
     </Link>

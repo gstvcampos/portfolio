@@ -7,21 +7,21 @@ export default async function Home() {
   return (
     <main
       id="home"
-      className="flex h-full max-h-full w-full flex-col overflow-hidden md:h-auto md:rounded-t-lg lg:max-w-4xl"
+      className="flex max-h-full min-h-full min-w-full max-w-full flex-col overflow-hidden md:min-h-0 lg:max-h-[calc(100%-16px)] lg:min-w-[900px] lg:max-w-[900px]"
     >
       <WindowBar innerText="Perfil" elementId="home" />
-      <section className="h-[calc(100%-40px)] flex-1 overflow-auto">
-        <div className="flex flex-col md:flex-row ">
-          <div className="min-w-[230px] bg-content-1 px-4 py-8">
+      <section className="flex-1 overflow-auto bg-content-2">
+        <div className="flex h-full min-w-0 flex-col md:flex-row">
+          <div className="min-w-0 flex-shrink-0 bg-content-1 p-4 text-center">
             <Image
-              className="m-auto"
+              className="inline-block"
               priority={true}
               src="/photo.png"
-              width={250}
-              height={250}
+              width={200}
+              height={200}
               alt={'Imagem do autor'}
             />
-            <div className="mt-4 flex flex-wrap justify-center gap-4 md:flex-col">
+            <div className="">
               <LinkDefault
                 innerText="Currículo"
                 href="https://drive.google.com/file/d/1jrGJ9Cqm193IuKJvPNoTZ3wLIg8yROfw/view?usp=drive_link"
@@ -36,13 +36,13 @@ export default async function Home() {
               </LinkDefault>
             </div>
           </div>
-          <div className="bg-content-2 px-4 py-8">
+          <div className="p-4 text-justify">
             <h2 className="px-3 text-3xl">
               Ola, eu sou o
               <span className="font-segoe-bold text-txt-3"> Gustavo!</span>
             </h2>
             <p className="px-3 text-txt-2">desenvolvedor web fullstack</p>
-            <p className="m-3">👋 Olá, seja bem-vindo ao meu portfólio!</p>
+            <p className="m-3">👋 Seja bem-vindo ao meu portfólio!</p>
             <p className="m-3">
               👨‍💻 Eu sou um desenvolvedor fullstack apaixonado por tecnologia e
               sempre em busca de novos aprendizados.

@@ -8,8 +8,6 @@ export default function Clock() {
   useEffect(() => {
     setTime(
       new Date().toLocaleString('pt-BR', {
-        day: '2-digit',
-        month: 'short',
         hour: '2-digit',
         minute: '2-digit',
       }),
@@ -18,8 +16,6 @@ export default function Clock() {
     const timer = setInterval(() => {
       setTime(
         new Date().toLocaleString('pt-BR', {
-          day: '2-digit',
-          month: 'short',
           hour: '2-digit',
           minute: '2-digit',
         }),

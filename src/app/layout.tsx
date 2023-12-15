@@ -14,10 +14,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={'h-screen overflow-hidden font-segoe text-txt-1 antialiased'}
+        className={
+          'relative h-screen overflow-hidden font-segoe text-txt-1 antialiased'
+        }
       >
         <Header />
-        <div className="flex h-[calc(100%-116px)] items-center justify-center overflow-hidden">
+        <div className="relative flex h-[calc(100%-116px)] items-center justify-center">
           {children}
         </div>
         <Footer />

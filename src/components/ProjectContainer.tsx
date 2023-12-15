@@ -1,24 +1,26 @@
 import { projects } from '@/db/projects'
-import LinkSmall from './LinkSmall'
+import Image from 'next/image'
 
-export default function ProjectContainer({ id }: { id: number }) {
+export default function ProjectContainer({ category }: { category: string }) {
   return (
-    <div className="h-full w-full bg-content-2 md:min-h-[500px]">
-      {projects.map((project) =>
-        project.id === id ? (
-          <div key={project.id} className="m-4 flex flex-col gap-2 p-4">
-            <h2 className="mb-2 font-segoe-bold text-3xl">{project.name}</h2>
-            {project.description.split('\n').map((paragraph, index) => {
-              return <p key={index}>{paragraph}</p>
-            })}
-            <div className="flex w-fit gap-5">
-              {project.deploy ? (
-                <LinkSmall href={project.deploy} innerText="Deploy" />
-              ) : null}
-              <LinkSmall href={project.main} innerText="GitHub" />
-            </div>
-          </div>
-        ) : null,
+    <div className="col-start-2 col-end-7 flex min-h-[520px] w-full flex-wrap">
+      {projects.map(
+        (project) =>
+          (!category || project.category === category) && (
+            <button
+              key={project.id}
+              className="m-1 flex h-32 w-32 flex-col items-center gap-2 rounded-lg p-4 hover:bg-focus-1"
+            >
+              <Image
+                priority={true}
+                src="/folder.svg"
+                width={48}
+                height={48}
+                alt={'icone de pasta'}
+              />
+              <span>{project.name}</span>
+            </button>
+          ),
       )}
     </div>
   )

@@ -30,5 +30,5 @@ export default function Clock() {
     }
   }, [])
 
-  return <span className="text-sm">{time}</span>
+  return <span className="text-xs">{time}</span>
 }

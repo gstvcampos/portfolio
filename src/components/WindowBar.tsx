@@ -12,30 +12,28 @@ export default function WindowBar({
   elementId: string
 }) {
   return (
-    <div>
-      <div className="flex h-10 items-center justify-between bg-bar-2">
-        <span></span>
-        <h1 className="text-lg">{innerText}</h1>
-        <div className="flex h-full gap-3 p-2">
-          <Link
-            className="rounded-full bg-focus-1 p-1 hover:bg-content-1"
-            href={'/desktop'}
-          >
-            <MinimizeIcon />
-          </Link>
-          <button
-            className="rounded-full bg-focus-1 p-1 hover:bg-content-1"
-            onClick={() => goFullScreen({ elementId })}
-          >
-            <MaximizeIcon />
-          </button>
-          <Link
-            className="rounded-full bg-focus-1 p-1 hover:bg-content-1"
-            href={'/desktop'}
-          >
-            <CloseIcon />
-          </Link>
-        </div>
+    <div className="flex h-8 items-center justify-between bg-bar-2">
+      <span></span>
+      <h1 className="font-segoe-bold">{innerText}</h1>
+      <div className="mr-3 flex gap-3">
+        <Link
+          className="rounded-full bg-content-1 p-1 hover:bg-focus-1"
+          href={'/desktop'}
+        >
+          <MinimizeIcon />
+        </Link>
+        <button
+          className="rounded-full bg-content-1 p-1 hover:bg-focus-1"
+          onClick={() => goFullScreen({ elementId })}
+        >
+          <MaximizeIcon />
+        </button>
+        <Link
+          className="rounded-full bg-content-1 p-1 hover:bg-focus-1"
+          href={'/desktop'}
+        >
+          <CloseIcon />
+        </Link>
       </div>
     </div>
   )

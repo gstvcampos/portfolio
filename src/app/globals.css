@@ -8,14 +8,15 @@
   --bottom: 355deg 65% 39%;
 
   --bar-primary: 240deg 3% 6%;
-  --bar-secondary: 60deg 1% 19%;
-  --content-primary: 0deg 0% 30%;
+  --bar-secondary: 240deg 1% 12%;
+  --content-primary: 240deg 1% 20%;
   --content-secondary: 240deg 3% 6%;
   --txt-primary: 0deg 0% 100%;
   --txt-secondary: 0deg 0% 60%;
   --txt-tertiary: 334deg 72% 48%;
   --focus-primary: 300deg 1% 33%;
   --focus-secondary: 334deg 33% 48%;
+  --focus-tertiary: 16deg 81% 52%;
 }
 
 body {

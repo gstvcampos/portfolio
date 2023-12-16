@@ -20,7 +20,7 @@ export default function ProjectModal({
     <div className="absolute left-6 top-12 z-10 mr-6">
       <div
         id={project.name}
-        className="max-h-[calc(100vh-160px)] max-w-[700px] overflow-auto rounded-lg border-[1px] border-txt-2 bg-content-2"
+        className="max-w-[700px] overflow-hidden rounded-lg border-[1px] border-txt-2 bg-content-2"
       >
         <div className="flex h-12 items-center justify-between bg-bar-2">
           <span></span>
@@ -46,7 +46,7 @@ export default function ProjectModal({
             </button>
           </div>
         </div>
-        <div className="flex flex-col gap-8 bg-content-2 p-4">
+        <div className="flex max-h-[calc(100vh-220px)] flex-col gap-8 overflow-auto bg-content-2 p-4">
           <div className="flex flex-col gap-3">
             {project.description.split('\n').map((paragraph, index) => {
               return <p key={index}># ~ {paragraph}</p>

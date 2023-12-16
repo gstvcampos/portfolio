@@ -5,7 +5,7 @@ import CustomImage from '../CustomImage'
 export default function Dock() {
   return (
     <footer className="absolute bottom-1 w-full">
-      <nav className="m-auto flex w-fit gap-1 rounded-lg border-[1px] border-txt-2 bg-content-2 bg-opacity-70 p-1">
+      <nav className="m-auto flex w-fit gap-1 rounded-lg border-[1px] border-txt-2 bg-content-2 bg-opacity-60 p-1">
         <AppBtn page="/">
           <CustomImage src="/profileIcon.svg" alt="icone profile" />
         </AppBtn>

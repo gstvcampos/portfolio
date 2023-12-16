@@ -17,7 +17,9 @@ export default function AppBtn({
     <Link
       href={page}
       className={`relative rounded-xl p-1 ${
-        pathname ? 'bg-focus-1' : 'hover:bg-focus-1'
+        pathname
+          ? 'bg-content-1 bg-opacity-60'
+          : 'bg-opacity-70 hover:bg-content-1'
       }`}
     >
       {children}

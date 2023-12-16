@@ -28,6 +28,7 @@ const config: Config = {
       focus: {
         1: 'hsl(var(--focus-primary) / <alpha-value>)',
         2: 'hsl(var(--focus-secondary) / <alpha-value>)',
+        3: 'hsl(var(--focus-tertiary) / <alpha-value>)',
       },
     },
   },

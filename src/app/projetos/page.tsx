@@ -23,11 +23,23 @@ export default function Projetos() {
       <section className="flex-1 overflow-auto bg-content-2">
         <div className="flex h-full min-w-0 flex-col md:flex-row">
           <CategoryProvider>
-            <div className="hidden flex-shrink-0 flex-col gap-1 bg-content-1 px-2 py-4 text-center md:flex">
+            <div className="hidden flex-shrink-0 flex-col bg-content-1 text-center md:flex">
               <FilterCategoryBtn innerText="Todos projetos" filter="" />
-              <FilterCategoryBtn innerText="Front end" filter="front-end" />
-              <FilterCategoryBtn innerText="Back end" filter="back-end" />
-              <FilterCategoryBtn innerText="Full stack" filter="full-stack" />
+              <FilterCategoryBtn
+                innerText="Front end"
+                filter="front-end"
+                className="pl-4"
+              />
+              <FilterCategoryBtn
+                innerText="Back end"
+                filter="back-end"
+                className="pl-4"
+              />
+              <FilterCategoryBtn
+                innerText="Full stack"
+                filter="full-stack"
+                className="pl-4"
+              />
             </div>
             <div className="md:min-h-[500px]">
               <ProjectContainer />

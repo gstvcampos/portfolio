@@ -12,10 +12,10 @@ export default function WindowBar({
   elementId: string
 }) {
   return (
-    <div className="flex h-9 items-center justify-between bg-bar-2">
+    <div className="flex items-center justify-between bg-bar-2">
       <span></span>
       <h1 className="font-segoe-bold">{innerText}</h1>
-      <div className="mr-3 flex items-center gap-3">
+      <div className="flex items-center gap-2 p-2">
         <Link
           className="rounded-full bg-content-1 p-1 hover:bg-focus-1"
           href={'/desktop'}

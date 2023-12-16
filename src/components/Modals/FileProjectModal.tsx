@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 export default function FileProjectModal({ project }: { project: Project }) {
   return (
-    <div className="absolute z-10 max-w-[700px]">
-      <div className="bg-content-2">
+    <div className="fixed inset-0 z-10 flex items-center justify-center">
+      <div className="max-w-[700px] rounded-lg bg-content-2 p-4">
         <div className="flex flex-col px-2 pt-2">
           <h2>{project.name}</h2>
           <p>{project.description}</p>

@@ -18,7 +18,7 @@ export default function FilterCategoryBtn({
   return (
     <button
       onClick={() => setCategory(filter)}
-      className={`min-w-[170px]·p-2·hover:bg-focus-1·focus:bg-focus-3 ${className}`}
+      className={`min-w-[170px] p-2 hover:bg-focus-1 focus:bg-focus-3 ${className}`}
     >
       <span className="flex items-center">
         <span className="mx-2">

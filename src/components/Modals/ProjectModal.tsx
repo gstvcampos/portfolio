@@ -7,18 +7,17 @@ import {
   MinimizeIcon,
 } from '@/db/Icons'
 import Link from 'next/link'
-import { MutableRefObject } from 'react'
 import goFullScreen from '../goFullScreen'
 
-export default function FileProjectModal({
+export default function ProjectModal({
   project,
-  modalRef,
+  handleCloseModal,
 }: {
   project: Project
-  modalRef: MutableRefObject<HTMLDivElement | null>
+  handleCloseModal: () => void
 }) {
   return (
-    <div className="absolute left-6 top-10 z-10 mr-6" ref={modalRef}>
+    <div className="absolute left-6 top-10 z-10 mr-6">
       <div
         id={project.name}
         className="max-w-[700px] overflow-auto rounded-lg bg-content-2"
@@ -27,25 +26,24 @@ export default function FileProjectModal({
           <span></span>
           <h1 className="font-segoe-bold">{project.name}</h1>
           <div className="mr-3 flex gap-3">
-            <Link
-              className="flex h-6 w-6 rounded-full bg-content-1 p-[6px] hover:bg-focus-1"
-              href={'/desktop'}
+            <button
+              className="flex h-6 w-6 rounded-full bg-content-1 p-1 hover:bg-focus-1"
+              onClick={handleCloseModal}
             >
               <MinimizeIcon />
-            </Link>
+            </button>
             <button
               className="flex h-6 w-6 rounded-full bg-content-1 p-1 hover:bg-focus-1"
               onClick={() => goFullScreen({ elementId: project.name })}
             >
               <MaximizeIcon />
             </button>
-
-            <Link
+            <button
               className="flex h-6 w-6 rounded-full bg-content-1 p-1 hover:bg-focus-1"
-              href={'/desktop'}
+              onClick={handleCloseModal}
             >
               <CloseIcon />
-            </Link>
+            </button>
           </div>
         </div>
         <div className="flex flex-col gap-8 bg-content-2 p-4">

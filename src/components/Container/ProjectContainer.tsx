@@ -5,7 +5,7 @@ import { projects } from '@/db/projects'
 import { CategoryContext } from '@/providers/CategoryContext'
 import { useContext, useState } from 'react'
 import CustomImage from '../CustomImage'
-import FileProjectModal from '../Modals/FileProjectModal'
+import ProjectModal from '../Modals/ProjectModal'
 
 export default function ProjectContainer() {
   const { category } = useContext(CategoryContext)
@@ -38,7 +38,12 @@ export default function ProjectContainer() {
             </li>
           ),
       )}
-      {isModalOpen && <FileProjectModal project={selectedProject!} />}
+      {isModalOpen && (
+        <ProjectModal
+          project={selectedProject!}
+          handleCloseModal={handleCloseModal}
+        />
+      )}
     </div>
   )
 }

@@ -1,35 +1,87 @@
 import { Project } from '@/app/projetos/page'
-import { GitHubIcon, LinkedinIcon } from '@/db/Icons'
+import {
+  BranchIcon,
+  CloseIcon,
+  LiveIcon,
+  MaximizeIcon,
+  MinimizeIcon,
+} from '@/db/Icons'
 import Link from 'next/link'
+import { MutableRefObject } from 'react'
+import goFullScreen from '../goFullScreen'
 
-export default function FileProjectModal({ project }: { project: Project }) {
+export default function FileProjectModal({
+  project,
+  modalRef,
+}: {
+  project: Project
+  modalRef: MutableRefObject<HTMLDivElement | null>
+}) {
   return (
-    <div className="fixed inset-0 z-10 flex items-center justify-center">
-      <div className="max-w-[700px] rounded-lg bg-content-2 p-4">
-        <div className="flex flex-col px-2 pt-2">
-          <h2>{project.name}</h2>
-          <p>{project.description}</p>
-          <div className="flex">
+    <div className="absolute left-6 top-10 z-10 mr-6" ref={modalRef}>
+      <div
+        id={project.name}
+        className="max-w-[700px] overflow-auto rounded-lg bg-content-2"
+      >
+        <div className="flex h-9 items-center justify-between bg-bar-2">
+          <span></span>
+          <h1 className="font-segoe-bold">{project.name}</h1>
+          <div className="mr-3 flex gap-3">
+            <Link
+              className="flex h-6 w-6 rounded-full bg-content-1 p-[6px] hover:bg-focus-1"
+              href={'/desktop'}
+            >
+              <MinimizeIcon />
+            </Link>
+            <button
+              className="flex h-6 w-6 rounded-full bg-content-1 p-1 hover:bg-focus-1"
+              onClick={() => goFullScreen({ elementId: project.name })}
+            >
+              <MaximizeIcon />
+            </button>
+
+            <Link
+              className="flex h-6 w-6 rounded-full bg-content-1 p-1 hover:bg-focus-1"
+              href={'/desktop'}
+            >
+              <CloseIcon />
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col gap-8 bg-content-2 p-4">
+          <div className="flex flex-col gap-3">
+            {project.description.split('\n').map((paragraph, index) => {
+              return <p key={index}># ~ {paragraph}</p>
+            })}
+          </div>
+          <div className="flex gap-2">
+            {project.technologies.map((tech, index) => (
+              <p className="rounded-xl border-2 px-2 text-sm" key={index}>
+                {tech}
+              </p>
+            ))}
+          </div>
+          <div className="flex gap-4">
             {project.deploy && (
               <Link
                 target="_blank"
                 href={project.deploy}
-                className="flex rounded-lg px-4 py-2 hover:bg-focus-1"
+                className="inline-block h-8 w-24 rounded-md bg-txt-1 text-content-2"
               >
-                <span className="flex items-center gap-4">
-                  <LinkedinIcon className="h-11 w-11" />
-                  Deploy
+                <span className="flex h-full items-center gap-2 px-2">
+                  <LiveIcon className="h-4 w-4" />
+                  live
                 </span>
               </Link>
             )}
             <Link
               target="_blank"
               href={project.main}
-              className="flex rounded-lg px-4 py-2 hover:bg-focus-1"
+              className="inline-block h-8 w-24 rounded-md bg-txt-1 text-content-2"
             >
-              <span className="flex items-center gap-4">
-                <GitHubIcon className="h-11 w-11" />
-                Branch
+              <span className="flex h-full items-center gap-2 px-2">
+                <BranchIcon className="h-4 w-4" />
+                branch
               </span>
             </Link>
           </div>

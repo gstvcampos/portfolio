@@ -11,7 +11,7 @@ export default function Tecnologias() {
     >
       <WindowBar innerText="Tecnologias" elementId="tecnologias" />
       <section className="h-[calc(100%-40px)] flex-1 overflow-auto bg-content-2 p-4">
-        <ul className="grid w-full grid-cols-2 gap-y-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+        <ul className="grid w-full grid-cols-2 gap-y-4 pb-20 sm:grid-cols-3 md:grid-cols-4 md:pb-0 lg:grid-cols-5">
           {technologies.map((tech, index) => (
             <li key={index}>
               <Link

@@ -23,7 +23,7 @@ export default function ProjectContainer() {
   }
 
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap pb-20 md:pb-0">
       {projects.map(
         (project) =>
           (!category || project.category === category) && (

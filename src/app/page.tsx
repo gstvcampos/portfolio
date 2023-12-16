@@ -36,7 +36,7 @@ export default async function Home() {
               </LinkDefault>
             </div>
           </div>
-          <div className="p-4 text-justify">
+          <div className="p-4 pb-20 text-justify md:pb-0">
             <h2 className="px-3 text-3xl">
               Ola, eu sou o
               <span className="font-segoe-bold text-txt-3"> Gustavo!</span>

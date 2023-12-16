@@ -17,12 +17,12 @@ export default function ProjectModal({
   handleCloseModal: () => void
 }) {
   return (
-    <div className="absolute left-6 top-10 z-10 mr-6">
+    <div className="absolute left-6 top-12 z-10 mr-6">
       <div
         id={project.name}
-        className="max-w-[700px] overflow-auto rounded-lg bg-content-2"
+        className="max-h-[calc(100vh-160px)] max-w-[700px] overflow-auto rounded-lg border-[1px] border-txt-2 bg-content-2"
       >
-        <div className="flex h-9 items-center justify-between bg-bar-2">
+        <div className="flex h-12 items-center justify-between bg-bar-2">
           <span></span>
           <h1 className="font-segoe-bold">{project.name}</h1>
           <div className="mr-3 flex gap-3">
@@ -52,14 +52,14 @@ export default function ProjectModal({
               return <p key={index}># ~ {paragraph}</p>
             })}
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech, index) => (
               <p className="rounded-xl border-2 px-2 text-sm" key={index}>
                 {tech}
               </p>
             ))}
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             {project.deploy && (
               <Link
                 target="_blank"

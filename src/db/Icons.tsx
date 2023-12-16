@@ -73,13 +73,14 @@ export const MaximizeIcon = (props: SVGProps<SVGSVGElement>) => (
 export const MinimizeIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 512 512"
+    viewBox="0 0 24 24"
     width="1em"
     height="1em"
     fill="currentColor"
     {...props}
   >
-    <path d="M72 400h368v32H72z" />
+    <path fill="none" d="M0 0h24v24H0V0z" />
+    <path d="M6 19h12v2H6z" />
   </svg>
 )
 

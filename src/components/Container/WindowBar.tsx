@@ -15,21 +15,21 @@ export default function WindowBar({
     <div className="flex h-9 items-center justify-between bg-bar-2">
       <span></span>
       <h1 className="font-segoe-bold">{innerText}</h1>
-      <div className="mr-3 flex gap-3">
+      <div className="mr-3 flex items-center gap-3">
         <Link
-          className="flex h-6 w-6 rounded-full bg-content-1 p-[6px] hover:bg-focus-1"
+          className="rounded-full bg-content-1 p-1 hover:bg-focus-1"
           href={'/desktop'}
         >
           <MinimizeIcon />
         </Link>
         <button
-          className="flex h-6 w-6 rounded-full bg-content-1 p-1 hover:bg-focus-1"
+          className="rounded-full bg-content-1 p-1 hover:bg-focus-1"
           onClick={() => goFullScreen({ elementId })}
         >
           <MaximizeIcon />
         </button>
         <Link
-          className="flex h-6 w-6 rounded-full bg-content-1 p-1 hover:bg-focus-1"
+          className="rounded-full bg-content-1 p-1 hover:bg-focus-1"
           href={'/desktop'}
         >
           <CloseIcon />

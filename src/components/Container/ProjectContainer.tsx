@@ -21,16 +21,7 @@ export default function ProjectContainer() {
     setSelectedProject(null)
     setModalOpen(false)
   }
-  function handleCloseModal() {
-    setSelectedProject(null)
-    setModalOpen(false)
-  }  function handleCloseModal() {
-    setSelectedProject(null)
-    setModalOpen(false)
-  }  function handleCloseModal() {
-    setSelectedProject(null)
-    setModalOpen(false)
-  }
+
   return (
     <div className="flex flex-wrap pb-20 md:pb-0">
       {projects.map(

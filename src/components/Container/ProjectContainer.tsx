@@ -8,15 +8,18 @@ export default function ProjectContainer({ id }: { id: string }) {
       {projects.map(
         (project) =>
           project.id === id && (
-            <div key={project.id} className="p-4 pb-20 text-justify md:pb-0">
-              <div className="gap-8 overflow-auto bg-content-2">
-                <div className="flex flex-col gap-8 p-4">
+            <div
+              key={project.id}
+              className="px-4 pb-20 pt-8 text-justify md:pb-0"
+            >
+              <div className="overflow-auto bg-content-2">
+                <div className="flex flex-col gap-8">
                   <div className="flex flex-col gap-3">
                     {project.description.split('\n').map((paragraph, index) => {
                       return <p key={index}># ~ {paragraph}</p>
                     })}
                   </div>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-4">
                     {project.technologies.map((tech, index) => (
                       <p
                         className="rounded-xl border-2 px-2 text-sm"
@@ -31,22 +34,26 @@ export default function ProjectContainer({ id }: { id: string }) {
                       <Link
                         target="_blank"
                         href={project.deploy}
-                        className="inline-block h-8 w-24 rounded-md bg-txt-1 text-content-2"
+                        className="inline-block rounded-md border-b-2 bg-bar-2 hover:bg-focus-1"
                       >
-                        <span className="flex h-full items-center gap-2 px-2">
-                          <LiveIcon className="h-4 w-4" />
-                          live
+                        <span className="flex items-center">
+                          <span className="border-r-[1px] px-2">
+                            <LiveIcon />
+                          </span>
+                          <span className="px-4 py-1">live</span>
                         </span>
                       </Link>
                     )}
                     <Link
                       target="_blank"
                       href={project.main}
-                      className="inline-block h-8 w-24 rounded-md bg-txt-1 text-content-2"
+                      className="inline-block rounded-md border-b-2 bg-bar-2 hover:bg-focus-1"
                     >
-                      <span className="flex h-full items-center gap-2 px-2">
-                        <BranchIcon className="h-4 w-4" />
-                        branch
+                      <span className="flex items-center">
+                        <span className="border-r-[1px] px-2">
+                          <BranchIcon />
+                        </span>
+                        <span className="px-4 py-1">branch</span>
                       </span>
                     </Link>
                   </div>

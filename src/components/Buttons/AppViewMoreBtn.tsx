@@ -2,7 +2,7 @@
 
 import { useModalClose } from '@/hooks/useModalClose'
 import { useRef, useState } from 'react'
-import CustomImage from '../CustomImage'
+import CustomIcon from '../CustomIcon'
 import AppModal from '../Modals/AppModal'
 
 export default function AppViewMoreBtn() {
@@ -22,7 +22,7 @@ export default function AppViewMoreBtn() {
         className="rounded-xl p-2 hover:bg-content-1 hover:bg-opacity-60"
         onClick={handleButtonClick}
       >
-        <CustomImage src="/apps.svg" alt="icone apps" />
+        <CustomIcon src="/apps.svg" alt="icone apps" />
       </button>
       {modalOpen && <AppModal modalRef={modalRef} />}
     </>

@@ -16,8 +16,12 @@ export default function ProjectsModalBtn() {
   const modalRef = useModalClose('Escape', () => setModalOpen(false), buttonRef)
 
   return (
-    <div className="md:hidden">
-      <button ref={buttonRef} onClick={handleButtonClick}>
+    <div className="absolute md:hidden">
+      <button
+        ref={buttonRef}
+        onClick={handleButtonClick}
+        className="m-1 rounded-md bg-content-1 p-1"
+      >
         <MenuIcon />
       </button>
       {modalOpen && <MenuProjectsModal modalRef={modalRef} />}

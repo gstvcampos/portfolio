@@ -1,4 +1,4 @@
-import { DocumentIcon } from '@/db/Icons'
+import { FileIcon } from '@/db/Icons'
 import Link from 'next/link'
 
 export default function ProjectLink({
@@ -12,7 +12,7 @@ export default function ProjectLink({
     <Link href={href}>
       <span className="flex min-w-[170px] items-center p-2 hover:bg-focus-1">
         <span className="mx-2">
-          <DocumentIcon />
+          <FileIcon />
         </span>
         <span>{name}</span>
       </span>

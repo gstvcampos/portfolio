@@ -1,8 +1,6 @@
-import { v4 as uuidv4 } from 'uuid'
-
 export const projects = [
   {
-    id: uuidv4(),
+    id: '1',
     category: 'front-end',
     name: 'Kenzie Hub',
     description:
@@ -18,7 +16,7 @@ export const projects = [
     ],
   },
   {
-    id: uuidv4(),
+    id: '2',
     category: 'front-end',
     name: 'Burguer',
     description:
@@ -29,7 +27,7 @@ export const projects = [
     technologies: ['JavaScript', 'React', 'Styled Components'],
   },
   {
-    id: uuidv4(),
+    id: '3',
     category: 'front-end',
     name: 'Nu Kenzie',
     description:
@@ -40,7 +38,7 @@ export const projects = [
     technologies: ['JavaScript', 'React', 'Styled Components'],
   },
   {
-    id: uuidv4(),
+    id: '4',
     category: 'full-stack',
     name: 'Contatos',
     description:
@@ -50,7 +48,7 @@ export const projects = [
     technologies: ['Nest.js', 'Prisma', 'Next.js', 'Tailwind CSS'],
   },
   {
-    id: uuidv4(),
+    id: '5',
     category: 'back-end',
     name: 'Kanvas',
     description:
@@ -59,7 +57,7 @@ export const projects = [
     technologies: ['Python', 'Django', 'Django Rest Framework', 'PostgreSQL'],
   },
   {
-    id: uuidv4(),
+    id: '6',
     category: 'back-end',
     name: 'KiMoveis',
     description:

@@ -5,7 +5,7 @@ import WindowBar from '@/components/Container/WindowBar'
 import { projects } from '@/db/projects'
 
 export interface Project {
-  id: number
+  id: string
   category: string
   name: string
   description: string

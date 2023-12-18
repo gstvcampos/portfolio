@@ -12,7 +12,7 @@ export default function Dock() {
         <AppBtn page="/tecnologias">
           <CustomImage src="/skillsIcon.svg" alt="icone habilidades" />
         </AppBtn>
-        <AppBtn page="/projetos">
+        <AppBtn page="/projetos/default">
           <CustomImage src="/projectsIcon.svg" alt="icone projetos" />
         </AppBtn>
         <AppViewMoreBtn />

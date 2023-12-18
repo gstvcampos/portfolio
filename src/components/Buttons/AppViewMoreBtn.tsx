@@ -24,7 +24,7 @@ export default function AppViewMoreBtn() {
       >
         <CustomImage src="/apps.svg" alt="icone apps" />
       </button>
-      {modalOpen ? <AppModal modalRef={modalRef} /> : null}
+      {modalOpen && <AppModal modalRef={modalRef} />}
     </>
   )
 }

@@ -10,7 +10,7 @@ export default function ProjectContainer({ id }: { id: string }) {
           project.id === id && (
             <div
               key={project.id}
-              className="px-4 pb-20 pt-8 text-justify md:pb-0"
+              className="px-4 pb-24 pt-8 text-justify md:pb-0"
             >
               <div className="overflow-auto bg-content-2">
                 <div className="flex flex-col gap-4">

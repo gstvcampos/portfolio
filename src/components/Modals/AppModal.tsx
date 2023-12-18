@@ -17,7 +17,7 @@ export default function AppModal({
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/gstvcampos/"
-            className="flex rounded-lg px-4 py-2 hover:bg-content-1 hover:bg-opacity-60"
+            className="flex rounded-lg px-4 py-2 hover:bg-content-2 hover:bg-opacity-40"
           >
             <span className="flex items-center gap-4">
               <LinkedinIcon className="h-11 w-11" />
@@ -26,7 +26,7 @@ export default function AppModal({
           <Link
             target="_blank"
             href="https://github.com/gstvcampos"
-            className="flex rounded-lg px-4 py-2 hover:bg-content-1 hover:bg-opacity-60"
+            className="flex rounded-lg px-4 py-2 hover:bg-content-2 hover:bg-opacity-40"
           >
             <span className="flex items-center gap-4">
               <GitHubIcon className="h-11 w-11" />
@@ -35,7 +35,7 @@ export default function AppModal({
           <Link
             target="_blank"
             href="https://drive.google.com/file/d/1jrGJ9Cqm193IuKJvPNoTZ3wLIg8yROfw/view?usp=drive_link"
-            className="flex rounded-lg px-4 py-2 hover:bg-content-1 hover:bg-opacity-60"
+            className="flex rounded-lg px-4 py-2 hover:bg-content-2 hover:bg-opacity-40"
           >
             <span className="flex items-center gap-4">
               <ResumeIcon className="h-11 w-11" />
@@ -44,7 +44,7 @@ export default function AppModal({
           <Link
             target="_blank"
             href="mailto:gustavo.bmc76@gmail.com"
-            className="flex rounded-lg px-4 py-2 hover:bg-content-1 hover:bg-opacity-60"
+            className="flex rounded-lg px-4 py-2 hover:bg-content-2 hover:bg-opacity-40"
           >
             <span className="flex items-center gap-4">
               <MailIcon className="h-11 w-11" />

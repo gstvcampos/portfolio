@@ -18,8 +18,8 @@ export default function AppBtn({
       href={page}
       className={`relative rounded-xl p-1 ${
         pathname
-          ? 'bg-content-1 bg-opacity-60'
-          : ' hover:bg-content-1 hover:bg-opacity-70'
+          ? 'bg-content-2 bg-opacity-40'
+          : ' hover:bg-content-2 hover:bg-opacity-40'
       }`}
     >
       {children}

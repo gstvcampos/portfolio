@@ -19,7 +19,7 @@ export default function AppViewMoreBtn() {
     <>
       <button
         ref={buttonRef}
-        className="rounded-xl p-2 hover:bg-content-1 hover:bg-opacity-60"
+        className="rounded-xl p-2 hover:bg-content-2 hover:bg-opacity-40"
         onClick={handleButtonClick}
       >
         <CustomIcon src="/apps.svg" alt="icone apps" />

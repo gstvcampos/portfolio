@@ -35,21 +35,33 @@ export default function Projetos({ params }: ProjectProps) {
             {projects.map(
               (project) =>
                 project.category === 'front-end' && (
-                  <ProjectLink key={project.id} project={project} />
+                  <ProjectLink
+                    key={project.id}
+                    name={project.name}
+                    href={project.id}
+                  />
                 ),
             )}
             <span className="bg-txt-2">Back end</span>
             {projects.map(
               (project) =>
                 project.category === 'back-end' && (
-                  <ProjectLink key={project.id} project={project} />
+                  <ProjectLink
+                    key={project.id}
+                    name={project.name}
+                    href={project.id}
+                  />
                 ),
             )}
             <span className="bg-txt-2">Full stack</span>
             {projects.map(
               (project) =>
                 project.category === 'full-stack' && (
-                  <ProjectLink key={project.id} project={project} />
+                  <ProjectLink
+                    key={project.id}
+                    name={project.name}
+                    href={project.id}
+                  />
                 ),
             )}
           </div>

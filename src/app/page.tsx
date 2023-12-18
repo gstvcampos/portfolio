@@ -44,13 +44,13 @@ export default async function Home() {
             <p className="px-3 text-txt-2">desenvolvedor web fullstack</p>
             <p className="m-3">👋 Seja bem-vindo ao meu portfólio!</p>
             <p className="m-3">
-              👨‍💻 Eu sou um desenvolvedor fullstack apaixonado por tecnologia e
-              sempre em busca de novos aprendizados.
-            </p>
-            <p className="m-3">
               🚀 Aqui, você vai encontrar uma diversidade de projetos que
               refletem a minha trajetória e crescimento no fascinante mundo da
               programação.
+            </p>
+            <p className="m-3">
+              👨‍💻 Eu sou um desenvolvedor fullstack apaixonado por tecnologia e
+              sempre em busca de novos aprendizados.
             </p>
             <p className="m-3">
               💡 Acredito que a tecnologia é uma ferramenta poderosa que pode

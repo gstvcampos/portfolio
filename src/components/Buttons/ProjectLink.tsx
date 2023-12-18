@@ -1,7 +1,8 @@
+import { Project } from '@/app/projetos/[id]/page'
 import { DocumentIcon } from '@/db/Icons'
 import Link from 'next/link'
 
-export default function ProjectLink({ project }) {
+export default function ProjectLink({ project }: { project: Project }) {
   return (
     <Link href={`${project.id}`}>
       <span className="flex min-w-[170px] items-center p-2 hover:bg-focus-1">

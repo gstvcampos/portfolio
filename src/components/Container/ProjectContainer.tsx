@@ -14,9 +14,10 @@ export default function ProjectContainer({ id }: { id: string }) {
             >
               <div className="overflow-auto bg-content-2">
                 <div className="flex flex-col gap-8">
+                  <h3 className="text-lg">## {project.name}</h3>
                   <div className="flex flex-col gap-3">
                     {project.description.split('\n').map((paragraph, index) => {
-                      return <p key={index}># ~ {paragraph}</p>
+                      return <p key={index}>- {paragraph}</p>
                     })}
                   </div>
                   <div className="flex flex-wrap gap-4">

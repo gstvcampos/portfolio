@@ -22,7 +22,7 @@ export default function ProjectsModalBtn() {
         onClick={handleButtonClick}
         className="m-1 rounded-md bg-content-1 p-1"
       >
-        <MenuIcon />
+        <MenuIcon className="h-5 w-5" />
       </button>
       {modalOpen && <MenuProjectsModal modalRef={modalRef} />}
     </div>

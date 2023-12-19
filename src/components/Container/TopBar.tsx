@@ -12,15 +12,17 @@ export default function TopBar() {
           target="_blank"
           href="https://www.linkedin.com/in/gstvcampos/"
           className="hover:text-focus-1"
+          aria-label="Linkedin do Gustavo"
         >
-          <LinkedinIcon />
+          <LinkedinIcon className="h-4 w-4" />
         </Link>
         <Link
           target="_blank"
           href="https://github.com/gstvcampos"
           className="hover:text-focus-1"
+          aria-label="Github do Gustavo"
         >
-          <GitHubIcon />
+          <GitHubIcon className="h-4 w-4" />
         </Link>
       </div>
     </header>

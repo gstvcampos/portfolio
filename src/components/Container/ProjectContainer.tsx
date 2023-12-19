@@ -1,6 +1,6 @@
 import { BranchIcon, LiveIcon } from '@/db/Icons'
 import { projects } from '@/db/projects'
-import Link from 'next/link'
+import LinkSM from '../Buttons/LinkSM'
 
 export default function ProjectContainer({ id }: { id: string }) {
   return (
@@ -32,31 +32,17 @@ export default function ProjectContainer({ id }: { id: string }) {
                   </div>
                   <div className="flex flex-wrap gap-4">
                     {project.deploy && (
-                      <Link
-                        target="_blank"
+                      <LinkSM
                         href={project.deploy}
-                        className="inline-block rounded-md border-b-2 bg-bar-2 hover:bg-focus-1"
-                      >
-                        <span className="flex items-center">
-                          <span className="border-r-[1px] px-2">
-                            <LiveIcon />
-                          </span>
-                          <span className="px-4 py-1">live</span>
-                        </span>
-                      </Link>
+                        icon={<LiveIcon />}
+                        label="live"
+                      />
                     )}
-                    <Link
-                      target="_blank"
+                    <LinkSM
                       href={project.main}
-                      className="inline-block rounded-md border-b-2 bg-bar-2 hover:bg-focus-1"
-                    >
-                      <span className="flex items-center">
-                        <span className="border-r-[1px] px-2">
-                          <BranchIcon />
-                        </span>
-                        <span className="px-4 py-1">branch</span>
-                      </span>
-                    </Link>
+                      icon={<BranchIcon />}
+                      label="branch"
+                    />
                   </div>
                 </div>
               </div>

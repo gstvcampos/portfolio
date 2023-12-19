@@ -1,7 +1,7 @@
+import LinkLG from '@/components/Buttons/LinkLG'
 import MainContainer from '@/components/Container/MainContainer'
 import { MailIcon, ResumeIcon } from '@/db/Icons'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default async function Home() {
   return (
@@ -17,30 +17,16 @@ export default async function Home() {
             alt={'Imagem do autor'}
           />
           <div>
-            <Link
-              target="_blank"
+            <LinkLG
               href="https://drive.google.com/file/d/1jrGJ9Cqm193IuKJvPNoTZ3wLIg8yROfw/view?usp=drive_link"
-              className="mx-2 my-4 inline-block min-w-[150px] rounded-md border-b-2 bg-bar-2 hover:bg-focus-1 md:mx-0 md:flex"
-            >
-              <span className="flex items-center">
-                <span className="border-r-[1px] px-3">
-                  <ResumeIcon />
-                </span>
-                <span className="px-4 py-2">Currículo</span>
-              </span>
-            </Link>
-            <Link
-              target="_blank"
+              icon={<ResumeIcon />}
+              label="Currículo"
+            />
+            <LinkLG
               href="mailto:gustavo.bmc76@gmail.com"
-              className="m-1 inline-block min-w-[150px] rounded-md border-b-2 bg-bar-2 hover:bg-focus-1 md:mx-0 md:flex"
-            >
-              <span className="flex items-center">
-                <span className="border-r-[1px] px-3">
-                  <MailIcon />
-                </span>
-                <span className="px-4 py-2">Email</span>
-              </span>
-            </Link>
+              icon={<MailIcon />}
+              label="Email"
+            />
           </div>
         </div>
         <div className="p-4 pb-20 text-justify md:pb-0">

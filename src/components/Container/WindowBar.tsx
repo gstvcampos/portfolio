@@ -17,18 +17,21 @@ export default function WindowBar({
       <h1 className="font-segoe-bold">{innerText}</h1>
       <div className="flex items-center gap-2 p-2">
         <Link
+          aria-label="Minimizar"
           className="rounded-full bg-content-1 p-1 hover:bg-focus-1"
           href={'/desktop'}
         >
           <MinimizeIcon />
         </Link>
         <button
+          aria-label="Maximizar"
           className="rounded-full bg-content-1 p-1 hover:bg-focus-1"
           onClick={() => goFullScreen({ elementId })}
         >
           <MaximizeIcon />
         </button>
         <Link
+          aria-label="Fechar"
           className="rounded-full bg-content-1 p-1 hover:bg-focus-1"
           href={'/desktop'}
         >

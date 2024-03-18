@@ -19,10 +19,6 @@
   --focus-tertiary: 16deg 81% 52%;
 }
 
-body {
-  background: linear-gradient(to bottom, hsl(var(--top)), hsl(var(--middle)), hsl(var(--bottom)));
-}
-
 .h-screen {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);

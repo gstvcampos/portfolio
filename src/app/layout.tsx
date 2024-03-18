@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         }
       >
         <TopBar />
-        <div className="relative flex h-[calc(100%-24px)] items-center justify-center">
+        <div className="relative flex h-[calc(100%-24px)] items-center justify-center bg-[url('/background.webp')] bg-auto bg-center bg-no-repeat">
           {children}
         </div>
         <Dock />

@@ -1,19 +1,34 @@
+import Image from 'next/image'
 import AppBtn from '../Buttons/AppBtn'
 import AppViewMoreBtn from '../Buttons/AppViewMoreBtn'
-import CustomIcon from '../CustomIcon'
 
 export default function Dock() {
   return (
     <footer className="absolute bottom-1 w-full">
       <nav className="m-auto flex w-fit gap-1 rounded-lg border-[1px] border-txt-2 bg-content-2 bg-opacity-60 p-1">
         <AppBtn page="/">
-          <CustomIcon src="/profileIcon.svg" alt="icone profile" />
+          <Image
+            src="/userHomeIcon.png"
+            alt="icone user home"
+            width={48}
+            height={48}
+          />
         </AppBtn>
         <AppBtn page="/tecnologias">
-          <CustomIcon src="/skillsIcon.svg" alt="icone habilidades" />
+          <Image
+            src="/bashIcon.png"
+            alt="icone projetos"
+            width={48}
+            height={48}
+          />
         </AppBtn>
         <AppBtn page="/projetos/default">
-          <CustomIcon src="/projectsIcon.svg" alt="icone projetos" />
+          <Image
+            src="/folderIcon.png"
+            alt="icone projetos"
+            width={48}
+            height={48}
+          />{' '}
         </AppBtn>
         <AppViewMoreBtn />
       </nav>

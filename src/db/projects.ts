@@ -80,7 +80,6 @@ export const projects = [
     description:
       'Hashtag Store é um ecommerce desenvolvida utilizando as mais recentes tecnologias para proporcionar uma experiência de compra online intuitiva e eficiente. Confira algumas das funcionalidades principais:\nAcesse sua conta de forma segura com credenciais usuais, ou opte por login via Google ou GitHub.\nReceba notificações importantes, como confirmações de conta e redefinições de senha, via e-mail.\nAdicione itens ao carrinho de compras anonimamente e mantenha-os mesmo após fazer login.\nDescubra os custos de envio utilizando a API do Melhor Envio para uma estimativa precisa.',
     deploy: 'https://hashtagtest.shop/',
-    main: 'https://github.com/Kenzie-Academy-Brasil-Developers/m4-kimoveis-gstvcampos',
     technologies: [
       'TypeScript',
       'Next.js',

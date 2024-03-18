@@ -38,11 +38,13 @@ export default function ProjectContainer({ id }: { id: string }) {
                         label="live"
                       />
                     )}
-                    <LinkSM
-                      href={project.main}
-                      icon={<BranchIcon />}
-                      label="branch"
-                    />
+                    {project.main && (
+                      <LinkSM
+                        href={project.main}
+                        icon={<BranchIcon />}
+                        label="branch"
+                      />
+                    )}
                   </div>
                 </div>
               </div>

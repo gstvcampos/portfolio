@@ -17,15 +17,15 @@ export default function Dock() {
         <AppBtn page="/tecnologias">
           <Image
             src="/bashIcon.png"
-            alt="icone projetos"
+            alt="icone do terminal"
             width={48}
             height={48}
           />
         </AppBtn>
         <AppBtn page="/projetos/default">
           <Image
-            src="/folderIcon.png"
-            alt="icone projetos"
+            src="/codeIcon.png"
+            alt="icone do vscode"
             width={48}
             height={48}
           />{' '}

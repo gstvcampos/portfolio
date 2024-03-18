@@ -11,7 +11,7 @@ export default async function Home() {
           <Image
             className="inline-block rounded-lg"
             priority={true}
-            src="/photo.png"
+            src="/photo.webp"
             width={200}
             height={200}
             alt={'Imagem do autor'}

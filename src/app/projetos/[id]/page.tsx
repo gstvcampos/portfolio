@@ -27,7 +27,7 @@ export default function Projetos({ params }: ProjectProps) {
           <MenuProjects />
         </div>
         <ProjectsModalBtn />
-        <div className="md:min-h-[500px]">
+        <div className="py-2 md:min-h-[500px]">
           <ProjectContainer id={params.id} />
         </div>
       </div>

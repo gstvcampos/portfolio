@@ -18,7 +18,7 @@ export default async function Home() {
           />
           <div>
             <LinkLG
-              href="https://drive.google.com/file/d/1j4gj_F4H6uJzqPwnR3rwKWuB757_pGVE/view"
+              href="https://drive.google.com/file/d/1kJO8HgCnYJuGtE00y9W8zY2v10IQkrVc/view"
               icon={<ResumeIcon />}
               label="Currículo"
             />

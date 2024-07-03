@@ -23,7 +23,7 @@ export default function AppModal({
             icon={<GitHubIcon className="h-11 w-11" />}
           />
           <LinkEmpty
-            href="https://drive.google.com/file/d/1jrGJ9Cqm193IuKJvPNoTZ3wLIg8yROfw/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1idIx-BNXVJsFtqM9s3j_EBZ6W-8gabrJ/view?usp=sharing"
             icon={<ResumeIcon className="h-11 w-11" />}
           />
           <LinkEmpty
